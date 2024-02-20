@@ -50,6 +50,8 @@ public class WelcomeScreen {
     }
     
     public void clickGetStartedButton() {
-    	
+    	MobileElement getStartedButton = (MobileElement) driver.findElement(By.
+    			xpath("//android.widget.TextView[@text=\"Get Started"));
+    	getStartedButton.click();
     }
 }

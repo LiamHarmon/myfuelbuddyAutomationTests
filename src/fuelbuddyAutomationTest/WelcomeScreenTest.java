@@ -68,10 +68,10 @@ public class WelcomeScreenTest extends BaseTestClass {
     public void testClickGetStartedButton() {
     	WelcomeScreen welcomeScreen = new WelcomeScreen(driver);
         welcomeScreen.clickGetStartedButton();
-        WebDriverWait wait = new WebDriverWait(driver, 5);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("unique_element_id")));
+        WebDriverWait wait = new WebDriverWait(driver, 500);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.widget.TextView[@text=\"Send Register Code\"]")));
         RegistrationScreen nextScreen = new RegistrationScreen(driver);
-        Assert.assertTrue(nextScreen.isElementPresent(), "The next screen was not displayed.");
+        Assert.assertTrue(nextScreen.isElementPresent(), "The Register Screen was not displayed.");
     }
     
 }
