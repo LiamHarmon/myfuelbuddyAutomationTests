@@ -19,7 +19,7 @@ public class WelcomeScreenTest extends BaseTestClass {
 		driver.resetApp();
 	}
 	
-	@Test
+	@Test(groups = {"regression"})
 	public void testFuelBuddyLogo() {
 		WelcomeScreen welcomeScreen = new WelcomeScreen(driver);
 		boolean actualValue = welcomeScreen.isFuelBuddyLogoDisplayed();
