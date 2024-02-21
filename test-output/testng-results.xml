@@ -1,33 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-19T09:38:40 GMT" name="Default suite" finished-at="2024-02-19T09:38:54 GMT" duration-ms="13526">
+  <suite started-at="2024-02-21T20:41:51 GMT" name="Regression Suite" finished-at="2024-02-21T20:42:45 GMT" duration-ms="53960">
     <groups>
+      <group name="regression">
+        <method signature="WelcomeScreenTest.testClickGetStartedButton()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@f78a47e]" name="testClickGetStartedButton" class="fuelbuddyAutomationTest.WelcomeScreenTest"/>
+        <method signature="WelcomeScreenTest.testFuelBuddyLogo()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@f78a47e]" name="testFuelBuddyLogo" class="fuelbuddyAutomationTest.WelcomeScreenTest"/>
+        <method signature="WelcomeScreenTest.testFuelStationImage()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@f78a47e]" name="testFuelStationImage" class="fuelbuddyAutomationTest.WelcomeScreenTest"/>
+        <method signature="WelcomeScreenTest.testGetStartedButtonDisplay()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@f78a47e]" name="testGetStartedButtonDisplay" class="fuelbuddyAutomationTest.WelcomeScreenTest"/>
+        <method signature="WelcomeScreenTest.testGetStartedText()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@f78a47e]" name="testGetStartedText" class="fuelbuddyAutomationTest.WelcomeScreenTest"/>
+        <method signature="WelcomeScreenTest.testWelcomeSloganText()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@f78a47e]" name="testWelcomeSloganText" class="fuelbuddyAutomationTest.WelcomeScreenTest"/>
+        <method signature="WelcomeScreenTest.testWelcomeText()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@f78a47e]" name="testWelcomeText" class="fuelbuddyAutomationTest.WelcomeScreenTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="WelcomeScreenTest.testClickGetStartedButton()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@f78a47e]" name="testClickGetStartedButton" class="fuelbuddyAutomationTest.WelcomeScreenTest"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-02-19T09:38:40 GMT" name="Default test" finished-at="2024-02-19T09:38:54 GMT" duration-ms="13526">
+    <test started-at="2024-02-21T20:41:51 GMT" name="Regression Test" finished-at="2024-02-21T20:42:45 GMT" duration-ms="53960">
       <class name="fuelbuddyAutomationTest.WelcomeScreenTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@41a0aa7d]" started-at="2024-02-19T09:38:40 GMT" name="setUp" finished-at="2024-02-19T09:38:53 GMT" duration-ms="12265" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@f78a47e]" started-at="2024-02-21T20:41:52 GMT" name="setUp" finished-at="2024-02-21T20:42:01 GMT" duration-ms="9350" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testFuelBuddyLogo()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@41a0aa7d]" started-at="2024-02-19T09:38:53 GMT" name="testFuelBuddyLogo" finished-at="2024-02-19T09:38:53 GMT" duration-ms="469" status="PASS">
+        <test-method is-config="true" signature="setUpEach()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@f78a47e]" started-at="2024-02-21T20:42:01 GMT" name="setUpEach" finished-at="2024-02-21T20:42:05 GMT" duration-ms="4155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpEach -->
+        <test-method signature="testClickGetStartedButton()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@f78a47e]" started-at="2024-02-21T20:42:05 GMT" name="testClickGetStartedButton" finished-at="2024-02-21T20:42:08 GMT" duration-ms="2867" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClickGetStartedButton -->
+        <test-method is-config="true" signature="setUpEach()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@f78a47e]" started-at="2024-02-21T20:42:08 GMT" name="setUpEach" finished-at="2024-02-21T20:42:12 GMT" duration-ms="4271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpEach -->
+        <test-method signature="testFuelBuddyLogo()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@f78a47e]" started-at="2024-02-21T20:42:12 GMT" name="testFuelBuddyLogo" finished-at="2024-02-21T20:42:14 GMT" duration-ms="1914" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFuelBuddyLogo -->
-        <test-method signature="testWelcomeSloganText()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@41a0aa7d]" started-at="2024-02-19T09:38:53 GMT" name="testWelcomeSloganText" finished-at="2024-02-19T09:38:53 GMT" duration-ms="83" status="PASS">
+        <test-method is-config="true" signature="setUpEach()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@f78a47e]" started-at="2024-02-21T20:42:14 GMT" name="setUpEach" finished-at="2024-02-21T20:42:18 GMT" duration-ms="4302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpEach -->
+        <test-method signature="testFuelStationImage()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@f78a47e]" started-at="2024-02-21T20:42:18 GMT" name="testFuelStationImage" finished-at="2024-02-21T20:42:20 GMT" duration-ms="1944" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFuelStationImage -->
+        <test-method is-config="true" signature="setUpEach()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@f78a47e]" started-at="2024-02-21T20:42:20 GMT" name="setUpEach" finished-at="2024-02-21T20:42:25 GMT" duration-ms="4282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpEach -->
+        <test-method signature="testGetStartedButtonDisplay()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@f78a47e]" started-at="2024-02-21T20:42:25 GMT" name="testGetStartedButtonDisplay" finished-at="2024-02-21T20:42:27 GMT" duration-ms="1978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetStartedButtonDisplay -->
+        <test-method is-config="true" signature="setUpEach()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@f78a47e]" started-at="2024-02-21T20:42:27 GMT" name="setUpEach" finished-at="2024-02-21T20:42:31 GMT" duration-ms="4282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpEach -->
+        <test-method signature="testGetStartedText()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@f78a47e]" started-at="2024-02-21T20:42:31 GMT" name="testGetStartedText" finished-at="2024-02-21T20:42:33 GMT" duration-ms="1918" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetStartedText -->
+        <test-method is-config="true" signature="setUpEach()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@f78a47e]" started-at="2024-02-21T20:42:33 GMT" name="setUpEach" finished-at="2024-02-21T20:42:37 GMT" duration-ms="4301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpEach -->
+        <test-method signature="testWelcomeSloganText()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@f78a47e]" started-at="2024-02-21T20:42:37 GMT" name="testWelcomeSloganText" finished-at="2024-02-21T20:42:39 GMT" duration-ms="1928" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWelcomeSloganText -->
-        <test-method signature="testWelcomeText()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@41a0aa7d]" started-at="2024-02-19T09:38:53 GMT" name="testWelcomeText" finished-at="2024-02-19T09:38:53 GMT" duration-ms="75" status="PASS">
+        <test-method is-config="true" signature="setUpEach()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@f78a47e]" started-at="2024-02-21T20:42:39 GMT" name="setUpEach" finished-at="2024-02-21T20:42:43 GMT" duration-ms="4246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpEach -->
+        <test-method signature="testWelcomeText()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@f78a47e]" started-at="2024-02-21T20:42:43 GMT" name="testWelcomeText" finished-at="2024-02-21T20:42:45 GMT" duration-ms="1934" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWelcomeText -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@41a0aa7d]" started-at="2024-02-19T09:38:53 GMT" name="tearDown" finished-at="2024-02-19T09:38:54 GMT" duration-ms="597" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@f78a47e]" started-at="2024-02-21T20:42:45 GMT" name="tearDown" finished-at="2024-02-21T20:42:45 GMT" duration-ms="262" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- fuelbuddyAutomationTest.WelcomeScreenTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Regression Test -->
+  </suite> <!-- Regression Suite -->
 </testng-results>

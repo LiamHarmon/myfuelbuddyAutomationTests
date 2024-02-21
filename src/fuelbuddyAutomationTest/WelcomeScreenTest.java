@@ -1,7 +1,6 @@
 package fuelbuddyAutomationTest;
 
 import org.testng.annotations.Test;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import fuelbuddyAutomation.WelcomeScreen;
@@ -14,9 +13,13 @@ import org.testng.Assert;
 
 public class WelcomeScreenTest extends BaseTestClass {
 	
-	@BeforeMethod
-	public void setUpEach() {
-		driver.resetApp();
+	@BeforeMethod(groups = {"regression", "smoke"})
+	public void setUpEach() throws Exception {
+	    if (driver != null) {
+	        driver.resetApp();
+	    } else {
+	    	System.out.println("Driver has not been initialized.");
+	    }
 	}
 	
 	@Test(groups = {"regression"})
@@ -26,7 +29,7 @@ public class WelcomeScreenTest extends BaseTestClass {
 		Assert.assertTrue(actualValue, "The FuelBuddy logo is not displayed.");
 	}
 	
-	@Test
+	@Test(groups = {"regression"})
 	public void testWelcomeText() {
 		WelcomeScreen welcomeScreen = new WelcomeScreen(driver);
         String actualText = welcomeScreen.getWelcomeText();
@@ -34,7 +37,7 @@ public class WelcomeScreenTest extends BaseTestClass {
         Assert.assertEquals(actualText, expectedText, "The welcome text does not match the expected value.");
 	}
 
-    @Test
+	@Test(groups = {"regression"})
     public void testWelcomeSloganText() {
         WelcomeScreen welcomeScreen = new WelcomeScreen(driver);
         String actualText = welcomeScreen.getWelcomeSloganText();
@@ -42,21 +45,21 @@ public class WelcomeScreenTest extends BaseTestClass {
         Assert.assertEquals(actualText, expectedText, "The welcome slogan text does not match the expected value.");
     }
     
-    @Test
+	@Test(groups = {"regression"})
     public void testFuelStationImage() {
     	WelcomeScreen welcomeScreen = new WelcomeScreen(driver);
     	boolean actualValue = welcomeScreen.isFuelStationImageDisplayed();
     	Assert.assertTrue(actualValue, "The Fuel Starion Image does not match the expected value.");
     }
     
-    @Test
+	@Test(groups = {"regression"})
     public void testGetStartedButtonDisplay() {
     	WelcomeScreen welcomeScreen = new WelcomeScreen(driver);
     	boolean actualValue = welcomeScreen.isGetStartedButtonDisplayed();
     	Assert.assertTrue(actualValue, "The Get Started Button does not match the expected value.");
     }
     
-    @Test
+	@Test(groups = {"regression"})
     public void testGetStartedText() {
     	WelcomeScreen welcomeScreen = new WelcomeScreen(driver);
         String actualText = welcomeScreen.getStartedText();
@@ -64,7 +67,7 @@ public class WelcomeScreenTest extends BaseTestClass {
         Assert.assertEquals(actualText, expectedText, "The Get Started text does not match the expected value.");
     }
     
-    @Test
+	@Test(groups = {"regression", "smoke"})
     public void testClickGetStartedButton() {
     	WelcomeScreen welcomeScreen = new WelcomeScreen(driver);
         welcomeScreen.clickGetStartedButton();

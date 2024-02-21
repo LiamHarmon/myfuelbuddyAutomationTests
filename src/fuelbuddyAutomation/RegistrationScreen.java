@@ -18,7 +18,7 @@ public class RegistrationScreen {
     public boolean isElementPresent() {
         try {
             MobileElement uniqueElement = (MobileElement) driver.findElement(By.
-            		xpath("//android.widget.TextView[@text=\\\"Send Register Code\\\"]"));
+            		xpath("//android.widget.TextView[@text=\"Send Register Code\"]"));
             return uniqueElement.isDisplayed();
         } catch (NoSuchElementException e) {
             return false;
