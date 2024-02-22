@@ -24,4 +24,10 @@ public class RegistrationScreen {
             return false;
         }
     }
+    
+    public boolean isFuelBuddyLogoDisplayed() {
+		MobileElement fuelBuddyLogo = (MobileElement) driver.findElement(By.
+				xpath("//android.widget.ImageView"));
+		return fuelBuddyLogo.isDisplayed();
+	}
 }
