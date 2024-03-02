@@ -13,7 +13,7 @@ import fuelbuddyAutomation.RegistrationScreen;
 
 public class RegistrationScreenTest extends BaseTestClass {
 	
-	 @BeforeClass
+	 @BeforeClass (groups = {"regression", "smoke"})
 	    public void navigateToRegistrationPage() {
 		 	RegistrationScreen registrationScreen = new RegistrationScreen(driver);
 		    registrationScreen.navigateToRegistrationPage();
@@ -37,7 +37,7 @@ public class RegistrationScreenTest extends BaseTestClass {
 	public void testLoginToggleButtonClick() {
 		RegistrationScreen registrationScreen = new RegistrationScreen(driver);
 		registrationScreen.clickLoginToggleButton();
-		WebDriverWait wait = new WebDriverWait(driver, 500);
+		WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.widget.TextView[@text=\"Send Login Code\"]")));
         LoginScreen nextScreen = new LoginScreen(driver);
         Assert.assertTrue(nextScreen.isElementPresent(), "The Login Screen was not displayed.");
