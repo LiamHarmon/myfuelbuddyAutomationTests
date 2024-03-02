@@ -22,14 +22,14 @@ public class WelcomeScreenTest extends BaseTestClass {
 	    }
 	}
 	
-	@Test(groups = {"regression"})
+	@Test(groups = {"regression"}, priority = 1)
 	public void testFuelBuddyLogo() {
 		WelcomeScreen welcomeScreen = new WelcomeScreen(driver);
 		boolean actualValue = welcomeScreen.isFuelBuddyLogoDisplayed();
 		Assert.assertTrue(actualValue, "The FuelBuddy logo is not displayed.");
 	}
 	
-	@Test(groups = {"regression"})
+	@Test(groups = {"regression"}, priority = 2)
 	public void testWelcomeText() {
 		WelcomeScreen welcomeScreen = new WelcomeScreen(driver);
         String actualText = welcomeScreen.getWelcomeText();
@@ -37,7 +37,7 @@ public class WelcomeScreenTest extends BaseTestClass {
         Assert.assertEquals(actualText, expectedText, "The welcome text does not match the expected value.");
 	}
 
-	@Test(groups = {"regression"})
+	@Test(groups = {"regression"}, priority = 3)
     public void testWelcomeSloganText() {
         WelcomeScreen welcomeScreen = new WelcomeScreen(driver);
         String actualText = welcomeScreen.getWelcomeSloganText();
@@ -45,21 +45,21 @@ public class WelcomeScreenTest extends BaseTestClass {
         Assert.assertEquals(actualText, expectedText, "The welcome slogan text does not match the expected value.");
     }
     
-	@Test(groups = {"regression"})
+	@Test(groups = {"regression"}, priority = 4)
     public void testFuelStationImage() {
     	WelcomeScreen welcomeScreen = new WelcomeScreen(driver);
     	boolean actualValue = welcomeScreen.isFuelStationImageDisplayed();
     	Assert.assertTrue(actualValue, "The Fuel Starion Image does not match the expected value.");
     }
     
-	@Test(groups = {"regression"})
+	@Test(groups = {"regression"}, priority = 5)
     public void testGetStartedButtonDisplay() {
     	WelcomeScreen welcomeScreen = new WelcomeScreen(driver);
     	boolean actualValue = welcomeScreen.isGetStartedButtonDisplayed();
     	Assert.assertTrue(actualValue, "The Get Started Button does not match the expected value.");
     }
     
-	@Test(groups = {"regression"})
+	@Test(groups = {"regression"}, priority = 6)
     public void testGetStartedText() {
     	WelcomeScreen welcomeScreen = new WelcomeScreen(driver);
         String actualText = welcomeScreen.getStartedText();
@@ -67,7 +67,7 @@ public class WelcomeScreenTest extends BaseTestClass {
         Assert.assertEquals(actualText, expectedText, "The Get Started text does not match the expected value.");
     }
     
-	@Test(groups = {"regression", "smoke"})
+	@Test(groups = {"regression", "smoke"}, priority = 7)
     public void testClickGetStartedButton() {
     	WelcomeScreen welcomeScreen = new WelcomeScreen(driver);
         welcomeScreen.clickGetStartedButton();
