@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Regression Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>17/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>20/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Mar 03 16:55:50 GMT 2024</td>
+<td>Started on:</td><td>Sun Mar 03 18:24:56 GMT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>141 seconds (141344 ms)</td>
+<tr><td>Total time:</td><td>216 seconds (216634 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>regression </td>
 </tr><tr>
@@ -75,78 +75,30 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='fuelbuddyAutomationTest.WelcomeScreenTest.testGetStartedText()'><b>testGetStartedText</b><br>Test class: fuelbuddyAutomationTest.WelcomeScreenTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
-System info: host: &apos;LIAM&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: C:\Users\liamh\Desktop\fuel..., appPackage: com.dcampion.fuelbuddy, automationName: UiAutomator2, databaseEnabled: false, desired: {app: C:\Users\liamh\Desktop\fuel..., automationName: UiAutomator2, deviceName: emulator-5554, platformName: android, platformVersion: 11.0}, deviceApiLevel: 30, deviceManufacturer: Google, deviceModel: sdk_gphone_x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: LINUX, platformVersion: 11, statBarHeight: 136, takesScreenshot: true, viewportRect: {height: 2984, left: 0, top: 136, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: 57c1076d-54be-47f2-b1b5-e71c73663f86
-*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;Get Started&quot;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:129)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at fuelbuddyAutomation.WelcomeScreen.getStartedText(WelcomeScreen.java:47)
-	at fuelbuddyAutomationTest.WelcomeScreenTest.testGetStartedText(WelcomeScreenTest.java:65)
+<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testBlankNameAndValidUsernameAndPhone()'><b>testBlankNameAndValidUsernameAndPhone</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.TextView[@text=&quot;Please enter your full name.&quot;] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at fuelbuddyAutomationTest.RegistrationScreenTest.testBlankNameAndValidUsernameAndPhone(RegistrationScreenTest.java:140)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1027200", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1027200'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //android.widget.TextView[@text=&quot;Please enter your full name.&quot;]
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
 System info: host: &apos;LIAM&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: C:\Users\liamh\Desktop\fuel..., appPackage: com.dcampion.fuelbuddy, automationName: UiAutomator2, databaseEnabled: false, desired: {app: C:\Users\liamh\Desktop\fuel..., automationName: UiAutomator2, deviceName: emulator-5554, platformName: android, platformVersion: 11.0}, deviceApiLevel: 30, deviceManufacturer: Google, deviceModel: sdk_gphone_x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: LINUX, platformVersion: 11, statBarHeight: 136, takesScreenshot: true, viewportRect: {height: 2984, left: 0, top: 136, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: 57c1076d-54be-47f2-b1b5-e71c73663f86
-*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;Get Started&quot;]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:129)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at fuelbuddyAutomation.WelcomeScreen.getStartedText(WelcomeScreen.java:47)
-	at fuelbuddyAutomationTest.WelcomeScreenTest.testGetStartedText(WelcomeScreenTest.java:65)
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 29 more
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7548983", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace7548983'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.TextView[@text=&quot;Please enter your full name.&quot;] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at fuelbuddyAutomationTest.RegistrationScreenTest.testBlankNameAndValidUsernameAndPhone(RegistrationScreenTest.java:140)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -175,9 +127,160 @@ Session ID: 57c1076d-54be-47f2-b1b5-e71c73663f86
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //android.widget.TextView[@text=&quot;Please enter your full name.&quot;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;LIAM&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 29 more
 </pre></div></td>
-<td>0</td>
-<td>fuelbuddyAutomationTest.WelcomeScreenTest@1530c739</td></tr>
+<td>11</td>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@8f2ef19</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testValidNameAndInvalidUsernameAndPhone()'><b>testValidNameAndInvalidUsernameAndPhone</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.TextView[@text=&quot;Username must be between 6-20 characters long. &quot;] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at fuelbuddyAutomationTest.RegistrationScreenTest.testValidNameAndInvalidUsernameAndPhone(RegistrationScreenTest.java:151)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //android.widget.TextView[@text=&quot;Username must be between 6-20 characters long. &quot;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;LIAM&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 29 more
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1130598644", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1130598644'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.TextView[@text=&quot;Username must be between 6-20 characters long. &quot;] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at fuelbuddyAutomationTest.RegistrationScreenTest.testValidNameAndInvalidUsernameAndPhone(RegistrationScreenTest.java:151)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //android.widget.TextView[@text=&quot;Username must be between 6-20 characters long. &quot;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;LIAM&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 29 more
+</pre></div></td>
+<td>12</td>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@8f2ef19</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testInvalidNameAndValidUsernameAndPhone()'><b>testInvalidNameAndValidUsernameAndPhone</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.TextView[@text=&quot;Please Enter Your Full Name.&quot;] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at fuelbuddyAutomationTest.RegistrationScreenTest.testInvalidNameAndValidUsernameAndPhone(RegistrationScreenTest.java:129)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //android.widget.TextView[@text=&quot;Please Enter Your Full Name.&quot;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;LIAM&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 29 more
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1487230025", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1487230025'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.TextView[@text=&quot;Please Enter Your Full Name.&quot;] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at fuelbuddyAutomationTest.RegistrationScreenTest.testInvalidNameAndValidUsernameAndPhone(RegistrationScreenTest.java:129)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //android.widget.TextView[@text=&quot;Please Enter Your Full Name.&quot;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;LIAM&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 29 more
+</pre></div></td>
+<td>11</td>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@8f2ef19</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -187,90 +290,105 @@ Session ID: 57c1076d-54be-47f2-b1b5-e71c73663f86
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testLoginToggleButtonDisplayed()'><b>testLoginToggleButtonDisplayed</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td></td>
+<td>0</td>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@8f2ef19</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testRegisterButtonDisplayed()'><b>testRegisterButtonDisplayed</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td></td>
+<td>0</td>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@8f2ef19</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.WelcomeScreenTest.testGetStartedText()'><b>testGetStartedText</b><br>Test class: fuelbuddyAutomationTest.WelcomeScreenTest</td>
+<td></td>
+<td>2</td>
+<td>fuelbuddyAutomationTest.WelcomeScreenTest@15bb5034</td></tr>
+<tr>
 <td title='fuelbuddyAutomationTest.RegistrationScreenTest.testUsernameFieldDisplayed()'><b>testUsernameFieldDisplayed</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
 <td></td>
 <td>0</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@6e9175d8</td></tr>
-<tr>
-<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testPhoneNumberPrefixFieldDisaplys()'><b>testPhoneNumberPrefixFieldDisaplys</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
-<td></td>
-<td>0</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@6e9175d8</td></tr>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@8f2ef19</td></tr>
 <tr>
 <td title='fuelbuddyAutomationTest.RegistrationScreenTest.testUsernameFieldText()'><b>testUsernameFieldText</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
 <td></td>
 <td>0</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@6e9175d8</td></tr>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@8f2ef19</td></tr>
 <tr>
-<td title='fuelbuddyAutomationTest.WelcomeScreenTest.testWelcomeText()'><b>testWelcomeText</b><br>Test class: fuelbuddyAutomationTest.WelcomeScreenTest</td>
-<td></td>
-<td>1</td>
-<td>fuelbuddyAutomationTest.WelcomeScreenTest@1530c739</td></tr>
-<tr>
-<td title='fuelbuddyAutomationTest.WelcomeScreenTest.testClickGetStartedButton()'><b>testClickGetStartedButton</b><br>Test class: fuelbuddyAutomationTest.WelcomeScreenTest</td>
-<td></td>
-<td>3</td>
-<td>fuelbuddyAutomationTest.WelcomeScreenTest@1530c739</td></tr>
-<tr>
-<td title='fuelbuddyAutomationTest.WelcomeScreenTest.testWelcomeSloganText()'><b>testWelcomeSloganText</b><br>Test class: fuelbuddyAutomationTest.WelcomeScreenTest</td>
-<td></td>
-<td>1</td>
-<td>fuelbuddyAutomationTest.WelcomeScreenTest@1530c739</td></tr>
-<tr>
-<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testFuelBuddyLogo()'><b>testFuelBuddyLogo</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testPhoneNumberPrefixFieldDisaplys()'><b>testPhoneNumberPrefixFieldDisaplys</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
 <td></td>
 <td>0</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@6e9175d8</td></tr>
-<tr>
-<td title='fuelbuddyAutomationTest.WelcomeScreenTest.testFuelStationImage()'><b>testFuelStationImage</b><br>Test class: fuelbuddyAutomationTest.WelcomeScreenTest</td>
-<td></td>
-<td>1</td>
-<td>fuelbuddyAutomationTest.WelcomeScreenTest@1530c739</td></tr>
-<tr>
-<td title='fuelbuddyAutomationTest.WelcomeScreenTest.testFuelBuddyLogo()'><b>testFuelBuddyLogo</b><br>Test class: fuelbuddyAutomationTest.WelcomeScreenTest</td>
-<td></td>
-<td>2</td>
-<td>fuelbuddyAutomationTest.WelcomeScreenTest@1530c739</td></tr>
-<tr>
-<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testLoginToggleButtonClick()'><b>testLoginToggleButtonClick</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
-<td></td>
-<td>0</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@6e9175d8</td></tr>
-<tr>
-<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testLoginToggleButtonDisplayed()'><b>testLoginToggleButtonDisplayed</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
-<td></td>
-<td>0</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@6e9175d8</td></tr>
-<tr>
-<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testNameFieldText()'><b>testNameFieldText</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
-<td></td>
-<td>0</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@6e9175d8</td></tr>
-<tr>
-<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testPhoneNumberFieldText()'><b>testPhoneNumberFieldText</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
-<td></td>
-<td>0</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@6e9175d8</td></tr>
-<tr>
-<td title='fuelbuddyAutomationTest.WelcomeScreenTest.testGetStartedButtonDisplay()'><b>testGetStartedButtonDisplay</b><br>Test class: fuelbuddyAutomationTest.WelcomeScreenTest</td>
-<td></td>
-<td>2</td>
-<td>fuelbuddyAutomationTest.WelcomeScreenTest@1530c739</td></tr>
-<tr>
-<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testNameFieldDisplayed()'><b>testNameFieldDisplayed</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
-<td></td>
-<td>0</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@6e9175d8</td></tr>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@8f2ef19</td></tr>
 <tr>
 <td title='fuelbuddyAutomationTest.RegistrationScreenTest.testPhoneNumberFieldDisplayed()'><b>testPhoneNumberFieldDisplayed</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
 <td></td>
 <td>0</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@6e9175d8</td></tr>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@8f2ef19</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.WelcomeScreenTest.testClickGetStartedButton()'><b>testClickGetStartedButton</b><br>Test class: fuelbuddyAutomationTest.WelcomeScreenTest</td>
+<td></td>
+<td>2</td>
+<td>fuelbuddyAutomationTest.WelcomeScreenTest@15bb5034</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testNameFieldDisplayed()'><b>testNameFieldDisplayed</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td></td>
+<td>0</td>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@8f2ef19</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.WelcomeScreenTest.testGetStartedButtonDisplay()'><b>testGetStartedButtonDisplay</b><br>Test class: fuelbuddyAutomationTest.WelcomeScreenTest</td>
+<td></td>
+<td>1</td>
+<td>fuelbuddyAutomationTest.WelcomeScreenTest@15bb5034</td></tr>
 <tr>
 <td title='fuelbuddyAutomationTest.RegistrationScreenTest.testPhoneNumberPrefixFieldText()'><b>testPhoneNumberPrefixFieldText</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
 <td></td>
 <td>0</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@6e9175d8</td></tr>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@8f2ef19</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.WelcomeScreenTest.testFuelStationImage()'><b>testFuelStationImage</b><br>Test class: fuelbuddyAutomationTest.WelcomeScreenTest</td>
+<td></td>
+<td>2</td>
+<td>fuelbuddyAutomationTest.WelcomeScreenTest@15bb5034</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testNameFieldText()'><b>testNameFieldText</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td></td>
+<td>0</td>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@8f2ef19</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testRegisterButtonText()'><b>testRegisterButtonText</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td></td>
+<td>0</td>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@8f2ef19</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testLoginToggleButtonClick()'><b>testLoginToggleButtonClick</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td></td>
+<td>0</td>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@8f2ef19</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testFuelBuddyLogo()'><b>testFuelBuddyLogo</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td></td>
+<td>0</td>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@8f2ef19</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testPhoneNumberFieldText()'><b>testPhoneNumberFieldText</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td></td>
+<td>0</td>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@8f2ef19</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.WelcomeScreenTest.testWelcomeSloganText()'><b>testWelcomeSloganText</b><br>Test class: fuelbuddyAutomationTest.WelcomeScreenTest</td>
+<td></td>
+<td>1</td>
+<td>fuelbuddyAutomationTest.WelcomeScreenTest@15bb5034</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.WelcomeScreenTest.testWelcomeText()'><b>testWelcomeText</b><br>Test class: fuelbuddyAutomationTest.WelcomeScreenTest</td>
+<td></td>
+<td>2</td>
+<td>fuelbuddyAutomationTest.WelcomeScreenTest@15bb5034</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.WelcomeScreenTest.testFuelBuddyLogo()'><b>testFuelBuddyLogo</b><br>Test class: fuelbuddyAutomationTest.WelcomeScreenTest</td>
+<td></td>
+<td>2</td>
+<td>fuelbuddyAutomationTest.WelcomeScreenTest@15bb5034</td></tr>
 </table><p>
 </body>
 </html>

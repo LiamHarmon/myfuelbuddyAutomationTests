@@ -105,6 +105,55 @@ public class RegistrationScreenTest extends BaseTestClass {
 		Assert.assertEquals(actualText, expectedText, "The Phone Number Prefix field text does not match the expected value.");
 	}
 	
+	@Test(groups = {"regression"}, priority = 12)
+	public void testRegisterButtonDisplayed() {
+		RegistrationScreen registrationScreen = new RegistrationScreen(driver);
+		boolean actualValue = registrationScreen.isRegisterButtonDisplayed();
+		Assert.assertTrue(actualValue, "The Register Button is not displayed.");
+	}
+	
+	@Test(groups = {"regression"}, priority = 13)
+	public void testRegisterButtonText() {
+		RegistrationScreen registrationScreen = new RegistrationScreen(driver);
+		String actualText = registrationScreen.getRegisterButtonText();
+		String expectedText = "Send Register Code";
+		Assert.assertEquals(actualText, expectedText, "The Register Button text does not match the expected value.");
+	}
+	
+	@Test(groups = {"regression", "smoke"}, priority = 14)
+	public void testInvalidNameAndValidUsernameAndPhone() {
+		RegistrationScreen registrationScreen = new RegistrationScreen(driver);
+		registrationScreen.enterInvalidNameAndValidUsernameAndPhone("A", "tttttAutoTest", "1234567890");
+		registrationScreen.clickRegisterButton();
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions
+				.visibilityOfElementLocated(By.xpath("//android.widget.TextView[@text=\"Please Enter Your Full Name.\"]")));
+		Assert.assertTrue(registrationScreen.isElementPresent(), "The Invalid Name message was not displayed.");
+	}
+	
+	@Test(groups = {"regression", "smoke"}, priority = 15)
+	public void testBlankNameAndValidUsernameAndPhone() {
+		RegistrationScreen registrationScreen = new RegistrationScreen(driver);
+		registrationScreen.enterBlankNameAndValidUsernameAndPhone("tttttAutoTest", "1234567890");
+		registrationScreen.clickRegisterButton();
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions
+				.visibilityOfElementLocated(By.xpath("//android.widget.TextView[@text=\"Please enter your full name.\"]")));
+		Assert.assertTrue(registrationScreen.isElementPresent(), "The Name is required message was not displayed.");
+	}
+	
+	@Test(groups = {"regression", "smoke"}, priority = 16)
+	public void testValidNameAndInvalidUsernameAndPhone() {
+		RegistrationScreen registrationScreen = new RegistrationScreen(driver);
+		registrationScreen.enterValidNameAndInvalidUsernameAndValidPhone("AutoTest", "t", "1234567890");
+		registrationScreen.clickRegisterButton();
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(
+				By.xpath("//android.widget.TextView[@text=\"Username must be between 6-20 characters long. \"]")));
+		Assert.assertTrue(registrationScreen.isElementPresent(), "The Invalid Username message was not displayed.");
+	}
+	
+	
 	 @AfterClass
 	    public void tearDown() {
 	        if (driver != null) {
