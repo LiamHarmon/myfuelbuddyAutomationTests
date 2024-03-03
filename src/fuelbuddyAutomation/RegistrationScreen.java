@@ -51,4 +51,57 @@ public class RegistrationScreen {
 				.findElement(By.xpath("//android.widget.TextView[@text=\"Login\"]"));
 		loginToggleButton.click();
 	}
+	
+	public String getNameFieldText() {
+		MobileElement nameField = (MobileElement) driver
+				.findElement(By.xpath("//android.widget.TextView[@text=\"Name\"]"));
+		return nameField.getText();
+	}
+	
+	public boolean isNameFieldDisplayed() {
+		MobileElement nameField = (MobileElement) driver
+				.findElement(By.xpath("//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText[1]"));
+		return nameField.isDisplayed();
+	}
+	
+	public String getUsernameFieldText() {
+		MobileElement usernameField = (MobileElement) driver
+				.findElement(By.xpath("//android.widget.TextView[@text=\"Username\"]"));
+		return usernameField.getText();
+	}
+	
+	public boolean isUsernameFieldDisplayed() {
+		MobileElement usernameField = (MobileElement) driver
+				.findElement(By.xpath("//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText[2]"));
+		return usernameField.isDisplayed();
+	}
+	
+	public String getPhoneNumberFieldText() {
+		MobileElement phoneField = (MobileElement) driver
+				.findElement(By.xpath("//android.widget.TextView[@text=\"Phone Number\"]"));
+		return phoneField.getText();
+	}
+		
+	public boolean isPhoneNumberFieldDisplayed() {
+		MobileElement phoneField = (MobileElement) driver
+				.findElement(By.xpath("//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText[4]"));
+		return phoneField.isDisplayed();
+	}
+	
+	public boolean isPhoneNumberPrefixFieldDisplayed() {
+		MobileElement phoneField = (MobileElement) driver
+				.findElement(By.xpath("//android.widget.EditText[@text=\"+353\"]"));
+		return phoneField.isDisplayed();
+	}
+	
+	public String getPhoneNumberPrefixFieldText() {
+		MobileElement phoneField = (MobileElement) driver
+				.findElement(By.xpath("//android.widget.EditText[@text=\"+353\"]"));
+		return phoneField.getText();
+	}
+	
+	
+	
+		
+	
 }
