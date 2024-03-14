@@ -11,9 +11,10 @@
 		</run>
 	</groups>
     <classes>
-      <class name="fuelbuddyAutomationTest.BaseTestClass"/>
+      <!--<class name="fuelbuddyAutomationTest.BaseTestClass"/>
       <class name="fuelbuddyAutomationTest.WelcomeScreenTest"/>
-      <class name="fuelbuddyAutomationTest.RegistrationScreenTest"/>
+      <class name="fuelbuddyAutomationTest.RegistrationScreenTest"/>-->
+      <class name="fuelbuddyAutomationTest.LoginScreenTest"/>
     </classes>
   </test> <!-- Regression Test -->
 </suite> <!-- Regression Suite -->
