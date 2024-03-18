@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Regression Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>14/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 14 16:39:52 GMT 2024</td>
+<td>Started on:</td><td>Mon Mar 18 13:56:54 GMT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>21 seconds (21368 ms)</td>
+<tr><td>Total time:</td><td>120 seconds (120429 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>regression </td>
 </tr><tr>
@@ -68,94 +68,97 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='fuelbuddyAutomationTest.LoginScreenTest.setUp()'><b>setUp</b><br>Test class: fuelbuddyAutomationTest.LoginScreenTest</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to /192.168.1.7:4723
+<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testNameFieldText()'><b>testNameFieldText</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
 System info: host: &apos;LIAM&apos;, ip: &apos;192.168.1.12&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:144)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
-	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:84)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:94)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:80)
-	at fuelbuddyAutomationTest.BaseTestClass.setUp(BaseTestClass.java:30)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.net.ConnectException: Failed to connect to /192.168.1.7:4723
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:104)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:54)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\liamh\Desktop\fuel..., appPackage: com.dcampion.fuelbuddy, automationName: UiAutomator2, databaseEnabled: false, desired: {app: C:\Users\liamh\Desktop\fuel..., automationName: UiAutomator2, deviceName: emulator-5554, platformName: android, platformVersion: 11.0}, deviceApiLevel: 30, deviceManufacturer: Google, deviceModel: sdk_gphone_x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: LINUX, platformVersion: 11, statBarHeight: 136, takesScreenshot: true, viewportRect: {height: 2984, left: 0, top: 136, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 94385957-d8a6-4d7b-a22e-7b02955db5f1
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;Name&quot;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:129)
-	... 37 more
-Caused by: java.net.ConnectException: Connection timed out: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
-	... 60 more
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1802066694", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1802066694'><pre>org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to /192.168.1.7:4723
-Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
-System info: host: &apos;LIAM&apos;, ip: &apos;192.168.1.12&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:144)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
-	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:84)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:94)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:80)
-	at fuelbuddyAutomationTest.BaseTestClass.setUp(BaseTestClass.java:30)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at fuelbuddyAutomation.RegistrationScreen.getNameFieldText(RegistrationScreen.java:57)
+	at fuelbuddyAutomationTest.RegistrationScreenTest.testNameFieldText(RegistrationScreenTest.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace841537936", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace841537936'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;LIAM&apos;, ip: &apos;192.168.1.12&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\liamh\Desktop\fuel..., appPackage: com.dcampion.fuelbuddy, automationName: UiAutomator2, databaseEnabled: false, desired: {app: C:\Users\liamh\Desktop\fuel..., automationName: UiAutomator2, deviceName: emulator-5554, platformName: android, platformVersion: 11.0}, deviceApiLevel: 30, deviceManufacturer: Google, deviceModel: sdk_gphone_x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: LINUX, platformVersion: 11, statBarHeight: 136, takesScreenshot: true, viewportRect: {height: 2984, left: 0, top: 136, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 94385957-d8a6-4d7b-a22e-7b02955db5f1
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;Name&quot;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:129)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at fuelbuddyAutomation.RegistrationScreen.getNameFieldText(RegistrationScreen.java:57)
+	at fuelbuddyAutomationTest.RegistrationScreenTest.testNameFieldText(RegistrationScreenTest.java:51)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:794)
 	at org.testng.TestRunner.run(TestRunner.java:596)
@@ -172,208 +175,140 @@ Driver info: driver.version: AndroidDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Failed to connect to /192.168.1.7:4723
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:104)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:54)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:129)
-	... 37 more
-Caused by: java.net.ConnectException: Connection timed out: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
-	... 60 more
-</pre></div></td>
-<td>21</td>
-<td>fuelbuddyAutomationTest.LoginScreenTest@4145bad8</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='fuelbuddyAutomationTest.LoginScreenTest.tearDown()'><b>tearDown</b><br>Test class: fuelbuddyAutomationTest.LoginScreenTest</td>
-<td></td>
-<td>-1710434414</td>
-<td>fuelbuddyAutomationTest.LoginScreenTest@4145bad8</td></tr>
-<tr>
-<td title='fuelbuddyAutomationTest.LoginScreenTest.setup()'><b>setup</b><br>Test class: fuelbuddyAutomationTest.LoginScreenTest</td>
-<td></td>
-<td>-1710434414</td>
-<td>fuelbuddyAutomationTest.LoginScreenTest@4145bad8</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='fuelbuddyAutomationTest.LoginScreenTest.testNavigateToLoginScreen()'><b>testNavigateToLoginScreen</b><br>Test class: fuelbuddyAutomationTest.LoginScreenTest</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to /192.168.1.7:4723
-Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
-System info: host: &apos;LIAM&apos;, ip: &apos;192.168.1.12&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:144)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
-	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:84)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:94)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:80)
-	at fuelbuddyAutomationTest.BaseTestClass.setUp(BaseTestClass.java:30)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.net.ConnectException: Failed to connect to /192.168.1.7:4723
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:104)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:54)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:129)
-	... 37 more
-Caused by: java.net.ConnectException: Connection timed out: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
-	... 60 more
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace859123506", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace859123506'><pre>org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to /192.168.1.7:4723
-Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
-System info: host: &apos;LIAM&apos;, ip: &apos;192.168.1.12&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:144)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
-	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:84)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:94)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:80)
-	at fuelbuddyAutomationTest.BaseTestClass.setUp(BaseTestClass.java:30)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Failed to connect to /192.168.1.7:4723
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:104)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:54)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:129)
-	... 37 more
-Caused by: java.net.ConnectException: Connection timed out: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
-	... 60 more
 </pre></div></td>
 <td>0</td>
-<td>fuelbuddyAutomationTest.LoginScreenTest@4145bad8</td></tr>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@449a4f23</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testLoginToggleButtonClick()'><b>testLoginToggleButtonClick</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+	at fuelbuddyAutomation.LoginScreen.&lt;init&gt;(LoginScreen.java:21)
+	at fuelbuddyAutomationTest.RegistrationScreenTest.testLoginToggleButtonClick(RegistrationScreenTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1128266449", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1128266449'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:799)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+	at fuelbuddyAutomation.LoginScreen.&lt;init&gt;(LoginScreen.java:21)
+	at fuelbuddyAutomationTest.RegistrationScreenTest.testLoginToggleButtonClick(RegistrationScreenTest.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@449a4f23</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testPhoneNumberFieldText()'><b>testPhoneNumberFieldText</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td></td>
+<td>0</td>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@449a4f23</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testPhoneNumberPrefixFieldDisaplys()'><b>testPhoneNumberPrefixFieldDisaplys</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td></td>
+<td>0</td>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@449a4f23</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testInvalidNameAndValidUsernameAndPhone()'><b>testInvalidNameAndValidUsernameAndPhone</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td></td>
+<td>2</td>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@449a4f23</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testPhoneNumberPrefixFieldText()'><b>testPhoneNumberPrefixFieldText</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td></td>
+<td>0</td>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@449a4f23</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testFuelBuddyLogo()'><b>testFuelBuddyLogo</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td></td>
+<td>0</td>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@449a4f23</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testUsernameFieldText()'><b>testUsernameFieldText</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td></td>
+<td>0</td>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@449a4f23</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testNameFieldDisplayed()'><b>testNameFieldDisplayed</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td></td>
+<td>0</td>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@449a4f23</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testPhoneNumberFieldDisplayed()'><b>testPhoneNumberFieldDisplayed</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td></td>
+<td>0</td>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@449a4f23</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testRegisterButtonText()'><b>testRegisterButtonText</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td></td>
+<td>0</td>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@449a4f23</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testLoginToggleButtonDisplayed()'><b>testLoginToggleButtonDisplayed</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td></td>
+<td>0</td>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@449a4f23</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testValidNameAndInvalidUsernameAndPhone()'><b>testValidNameAndInvalidUsernameAndPhone</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td></td>
+<td>2</td>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@449a4f23</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testUsernameFieldDisplayed()'><b>testUsernameFieldDisplayed</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td></td>
+<td>0</td>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@449a4f23</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testRegisterButtonDisplayed()'><b>testRegisterButtonDisplayed</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td></td>
+<td>0</td>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@449a4f23</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testBlankNameAndValidUsernameAndPhone()'><b>testBlankNameAndValidUsernameAndPhone</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td></td>
+<td>2</td>
+<td>fuelbuddyAutomationTest.RegistrationScreenTest@449a4f23</td></tr>
 </table><p>
 </body>
 </html>

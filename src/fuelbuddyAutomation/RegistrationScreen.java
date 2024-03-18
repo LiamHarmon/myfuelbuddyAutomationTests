@@ -54,7 +54,7 @@ public class RegistrationScreen {
 	
 	public String getNameFieldText() {
 		MobileElement nameField = (MobileElement) driver
-				.findElement(By.xpath("//android.widget.TextView[@text=\"Name\"]"));
+				.findElement(By.xpath("//android.widget.TextView[@text=\"First Name\"]"));
 		return nameField.getText();
 	}
 	

@@ -13,10 +13,9 @@
     <classes>
       <class name="fuelbuddyAutomationTest.RegistrationScreenTest">
         <methods>
-          <include name="testBlankNameAndValidUsernameAndPhone"/>
           <include name="navigateToRegistrationPage"/>
-          <include name="testValidNameAndInvalidUsernameAndPhone"/>
-          <include name="testInvalidNameAndValidUsernameAndPhone"/>
+          <include name="testNameFieldText"/>
+          <include name="testLoginToggleButtonClick"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- fuelbuddyAutomationTest.RegistrationScreenTest -->

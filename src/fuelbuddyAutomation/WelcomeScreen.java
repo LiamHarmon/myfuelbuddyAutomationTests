@@ -39,7 +39,7 @@ public class WelcomeScreen {
     
     public boolean isGetStartedButtonDisplayed() {
 		MobileElement getStartedButton = (MobileElement) driver.findElement(By.
-				xpath("//android.view.ViewGroup[@content-desc=\"Get Started\"]"));
+				xpath("//android.view.ViewGroup[@content-desc=\"Get Started\"]/android.view.ViewGroup"));
 		return getStartedButton.isDisplayed();
 	}
     
@@ -51,7 +51,7 @@ public class WelcomeScreen {
     
     public void clickGetStartedButton() {
     	MobileElement getStartedButton = (MobileElement) driver.findElement(By.
-    			xpath("//android.widget.TextView[@text=\"Get Started\"]"));
+    			xpath("//android.view.ViewGroup[@content-desc=\"Get Started\"]/android.view.ViewGroup"));
     	getStartedButton.click();
     }
 }

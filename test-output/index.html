@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Regression_Suite" class="navigator-link">
-              <span class="suite-name border-skipped">Regression Suite</span>
+              <span class="suite-name border-failed">Regression Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -61,7 +61,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Regression_Suite" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,21 +93,105 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,  1 skipped,  </span>
+                    <span class="method-stats">16 methods, 2 failed,   14 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Regression_Suite" class="hide-methods skipped suite-Regression_Suite"> (hide)</a> <!-- hide-methods skipped suite-Regression_Suite -->
-                      <a href="#" panel-name="suite-Regression_Suite" class="show-methods skipped suite-Regression_Suite"> (show)</a> <!-- show-methods skipped suite-Regression_Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Regression_Suite" class="hide-methods failed suite-Regression_Suite"> (hide)</a> <!-- hide-methods failed suite-Regression_Suite -->
+                      <a href="#" panel-name="suite-Regression_Suite" class="show-methods failed suite-Regression_Suite"> (show)</a> <!-- show-methods failed suite-Regression_Suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Regression_Suite">
+                    <div class="method-list-content failed suite-Regression_Suite">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression_Suite" title="fuelbuddyAutomationTest.LoginScreenTest" class="method navigator-link" hash-for-method="testNavigateToLoginScreen">testNavigateToLoginScreen</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="fuelbuddyAutomationTest.RegistrationScreenTest" class="method navigator-link" hash-for-method="testLoginToggleButtonClick">testLoginToggleButtonClick</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Regression_Suite -->
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="fuelbuddyAutomationTest.RegistrationScreenTest" class="method navigator-link" hash-for-method="testNameFieldText">testNameFieldText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Regression_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Regression_Suite" class="hide-methods passed suite-Regression_Suite"> (hide)</a> <!-- hide-methods passed suite-Regression_Suite -->
+                      <a href="#" panel-name="suite-Regression_Suite" class="show-methods passed suite-Regression_Suite"> (show)</a> <!-- show-methods passed suite-Regression_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Regression_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="fuelbuddyAutomationTest.RegistrationScreenTest" class="method navigator-link" hash-for-method="testBlankNameAndValidUsernameAndPhone">testBlankNameAndValidUsernameAndPhone</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="fuelbuddyAutomationTest.RegistrationScreenTest" class="method navigator-link" hash-for-method="testFuelBuddyLogo">testFuelBuddyLogo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="fuelbuddyAutomationTest.RegistrationScreenTest" class="method navigator-link" hash-for-method="testInvalidNameAndValidUsernameAndPhone">testInvalidNameAndValidUsernameAndPhone</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="fuelbuddyAutomationTest.RegistrationScreenTest" class="method navigator-link" hash-for-method="testLoginToggleButtonDisplayed">testLoginToggleButtonDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="fuelbuddyAutomationTest.RegistrationScreenTest" class="method navigator-link" hash-for-method="testNameFieldDisplayed">testNameFieldDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="fuelbuddyAutomationTest.RegistrationScreenTest" class="method navigator-link" hash-for-method="testPhoneNumberFieldDisplayed">testPhoneNumberFieldDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="fuelbuddyAutomationTest.RegistrationScreenTest" class="method navigator-link" hash-for-method="testPhoneNumberFieldText">testPhoneNumberFieldText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="fuelbuddyAutomationTest.RegistrationScreenTest" class="method navigator-link" hash-for-method="testPhoneNumberPrefixFieldDisaplys">testPhoneNumberPrefixFieldDisaplys</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="fuelbuddyAutomationTest.RegistrationScreenTest" class="method navigator-link" hash-for-method="testPhoneNumberPrefixFieldText">testPhoneNumberPrefixFieldText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="fuelbuddyAutomationTest.RegistrationScreenTest" class="method navigator-link" hash-for-method="testRegisterButtonDisplayed">testRegisterButtonDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="fuelbuddyAutomationTest.RegistrationScreenTest" class="method navigator-link" hash-for-method="testRegisterButtonText">testRegisterButtonText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="fuelbuddyAutomationTest.RegistrationScreenTest" class="method navigator-link" hash-for-method="testUsernameFieldDisplayed">testUsernameFieldDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="fuelbuddyAutomationTest.RegistrationScreenTest" class="method navigator-link" hash-for-method="testUsernameFieldText">testUsernameFieldText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="fuelbuddyAutomationTest.RegistrationScreenTest" class="method navigator-link" hash-for-method="testValidNameAndInvalidUsernameAndPhone">testValidNameAndInvalidUsernameAndPhone</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Regression_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,76 +203,179 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Regression_Suite" class="panel Regression_Suite">
-          <div class="suite-Regression_Suite-class-skipped">
+          <div class="suite-Regression_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">fuelbuddyAutomationTest.LoginScreenTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">fuelbuddyAutomationTest.RegistrationScreenTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testNavigateToLoginScreen">
-                  </a> <!-- testNavigateToLoginScreen -->
-                  <span class="method-name">testNavigateToLoginScreen</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to /192.168.1.7:4723
+                  <a name="testLoginToggleButtonClick">
+                  </a> <!-- testLoginToggleButtonClick -->
+                  <span class="method-name">testLoginToggleButtonClick</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+	at fuelbuddyAutomation.LoginScreen.&lt;init&gt;(LoginScreen.java:21)
+	at fuelbuddyAutomationTest.RegistrationScreenTest.testLoginToggleButtonClick(RegistrationScreenTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNameFieldText">
+                  </a> <!-- testNameFieldText -->
+                  <span class="method-name">testNameFieldText</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
 System info: host: &apos;LIAM&apos;, ip: &apos;192.168.1.12&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:144)
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\liamh\Desktop\fuel..., appPackage: com.dcampion.fuelbuddy, automationName: UiAutomator2, databaseEnabled: false, desired: {app: C:\Users\liamh\Desktop\fuel..., automationName: UiAutomator2, deviceName: emulator-5554, platformName: android, platformVersion: 11.0}, deviceApiLevel: 30, deviceManufacturer: Google, deviceModel: sdk_gphone_x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: LINUX, platformVersion: 11, statBarHeight: 136, takesScreenshot: true, viewportRect: {height: 2984, left: 0, top: 136, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 94385957-d8a6-4d7b-a22e-7b02955db5f1
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;Name&quot;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:129)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
-	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:84)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:94)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:80)
-	at fuelbuddyAutomationTest.BaseTestClass.setUp(BaseTestClass.java:30)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at fuelbuddyAutomation.RegistrationScreen.getNameFieldText(RegistrationScreen.java:57)
+	at fuelbuddyAutomationTest.RegistrationScreenTest.testNameFieldText(RegistrationScreenTest.java:51)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.net.ConnectException: Failed to connect to /192.168.1.7:4723
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:104)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:54)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:129)
-	... 37 more
-Caused by: java.net.ConnectException: Connection timed out: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
-	... 60 more
-... Removed 25 stack frames
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression_Suite-class-skipped -->
+          </div> <!-- suite-Regression_Suite-class-failed -->
+          <div class="suite-Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">fuelbuddyAutomationTest.RegistrationScreenTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBlankNameAndValidUsernameAndPhone">
+                  </a> <!-- testBlankNameAndValidUsernameAndPhone -->
+                  <span class="method-name">testBlankNameAndValidUsernameAndPhone</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFuelBuddyLogo">
+                  </a> <!-- testFuelBuddyLogo -->
+                  <span class="method-name">testFuelBuddyLogo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidNameAndValidUsernameAndPhone">
+                  </a> <!-- testInvalidNameAndValidUsernameAndPhone -->
+                  <span class="method-name">testInvalidNameAndValidUsernameAndPhone</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginToggleButtonDisplayed">
+                  </a> <!-- testLoginToggleButtonDisplayed -->
+                  <span class="method-name">testLoginToggleButtonDisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNameFieldDisplayed">
+                  </a> <!-- testNameFieldDisplayed -->
+                  <span class="method-name">testNameFieldDisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPhoneNumberFieldDisplayed">
+                  </a> <!-- testPhoneNumberFieldDisplayed -->
+                  <span class="method-name">testPhoneNumberFieldDisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPhoneNumberFieldText">
+                  </a> <!-- testPhoneNumberFieldText -->
+                  <span class="method-name">testPhoneNumberFieldText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPhoneNumberPrefixFieldDisaplys">
+                  </a> <!-- testPhoneNumberPrefixFieldDisaplys -->
+                  <span class="method-name">testPhoneNumberPrefixFieldDisaplys</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPhoneNumberPrefixFieldText">
+                  </a> <!-- testPhoneNumberPrefixFieldText -->
+                  <span class="method-name">testPhoneNumberPrefixFieldText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterButtonDisplayed">
+                  </a> <!-- testRegisterButtonDisplayed -->
+                  <span class="method-name">testRegisterButtonDisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterButtonText">
+                  </a> <!-- testRegisterButtonText -->
+                  <span class="method-name">testRegisterButtonText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUsernameFieldDisplayed">
+                  </a> <!-- testUsernameFieldDisplayed -->
+                  <span class="method-name">testUsernameFieldDisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUsernameFieldText">
+                  </a> <!-- testUsernameFieldText -->
+                  <span class="method-name">testUsernameFieldText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidNameAndInvalidUsernameAndPhone">
+                  </a> <!-- testValidNameAndInvalidUsernameAndPhone -->
+                  <span class="method-name">testValidNameAndInvalidUsernameAndPhone</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Suite-class-passed -->
         </div> <!-- panel Regression_Suite -->
         <div panel-name="test-xml-Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -209,7 +396,8 @@ Caused by: java.net.ConnectException: Connection timed out: no further informati
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;fuelbuddyAutomationTest.LoginScreenTest&quot;/&gt;
+      &lt;class name=&quot;fuelbuddyAutomationTest.BaseTestClass&quot;/&gt;
+      &lt;class name=&quot;fuelbuddyAutomationTest.RegistrationScreenTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Regression Test --&gt;
 &lt;/suite&gt; &lt;!-- Regression Suite --&gt;
@@ -223,7 +411,7 @@ Caused by: java.net.ConnectException: Connection timed out: no further informati
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Regression Test (1 class)</span>
+                <span class="test-name">Regression Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -237,7 +425,83 @@ Caused by: java.net.ConnectException: Connection timed out: no further informati
               <span class="test-group-name">regression</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">testNavigateToLoginScreen</span>
+                <span class="method-in-group-name">testBlankNameAndValidUsernameAndPhone</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testFuelBuddyLogo</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testInvalidNameAndValidUsernameAndPhone</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLoginToggleButtonClick</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLoginToggleButtonDisplayed</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testNameFieldDisplayed</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testNameFieldText</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testPhoneNumberFieldDisplayed</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testPhoneNumberFieldText</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testPhoneNumberPrefixFieldDisaplys</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testPhoneNumberPrefixFieldText</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testRegisterButtonDisplayed</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testRegisterButtonText</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testUsernameFieldDisplayed</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testUsernameFieldText</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testValidNameAndInvalidUsernameAndPhone</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testBlankNameAndValidUsernameAndPhone</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testInvalidNameAndValidUsernameAndPhone</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testValidNameAndInvalidUsernameAndPhone</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -257,16 +521,76 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(16);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testNavigateToLoginScreen')
-data.setCell(0, 2, 'fuelbuddyAutomationTest.LoginScreenTest')
-data.setCell(0, 3, 0);
+data.setCell(0, 1, 'testValidNameAndInvalidUsernameAndPhone')
+data.setCell(0, 2, 'fuelbuddyAutomationTest.RegistrationScreenTest')
+data.setCell(0, 3, 2830);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testInvalidNameAndValidUsernameAndPhone')
+data.setCell(1, 2, 'fuelbuddyAutomationTest.RegistrationScreenTest')
+data.setCell(1, 3, 2787);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testBlankNameAndValidUsernameAndPhone')
+data.setCell(2, 2, 'fuelbuddyAutomationTest.RegistrationScreenTest')
+data.setCell(2, 3, 2262);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testLoginToggleButtonClick')
+data.setCell(3, 2, 'fuelbuddyAutomationTest.RegistrationScreenTest')
+data.setCell(3, 3, 907);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testPhoneNumberFieldDisplayed')
+data.setCell(4, 2, 'fuelbuddyAutomationTest.RegistrationScreenTest')
+data.setCell(4, 3, 64);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testNameFieldDisplayed')
+data.setCell(5, 2, 'fuelbuddyAutomationTest.RegistrationScreenTest')
+data.setCell(5, 3, 61);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testPhoneNumberPrefixFieldDisaplys')
+data.setCell(6, 2, 'fuelbuddyAutomationTest.RegistrationScreenTest')
+data.setCell(6, 3, 60);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testFuelBuddyLogo')
+data.setCell(7, 2, 'fuelbuddyAutomationTest.RegistrationScreenTest')
+data.setCell(7, 3, 59);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testRegisterButtonText')
+data.setCell(8, 2, 'fuelbuddyAutomationTest.RegistrationScreenTest')
+data.setCell(8, 3, 59);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testLoginToggleButtonDisplayed')
+data.setCell(9, 2, 'fuelbuddyAutomationTest.RegistrationScreenTest')
+data.setCell(9, 3, 59);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testUsernameFieldDisplayed')
+data.setCell(10, 2, 'fuelbuddyAutomationTest.RegistrationScreenTest')
+data.setCell(10, 3, 59);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testPhoneNumberPrefixFieldText')
+data.setCell(11, 2, 'fuelbuddyAutomationTest.RegistrationScreenTest')
+data.setCell(11, 3, 57);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testPhoneNumberFieldText')
+data.setCell(12, 2, 'fuelbuddyAutomationTest.RegistrationScreenTest')
+data.setCell(12, 3, 55);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testUsernameFieldText')
+data.setCell(13, 2, 'fuelbuddyAutomationTest.RegistrationScreenTest')
+data.setCell(13, 3, 55);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testRegisterButtonDisplayed')
+data.setCell(14, 2, 'fuelbuddyAutomationTest.RegistrationScreenTest')
+data.setCell(14, 3, 48);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testNameFieldText')
+data.setCell(15, 2, 'fuelbuddyAutomationTest.RegistrationScreenTest')
+data.setCell(15, 3, 44);
 window.suiteTableData['Regression_Suite']= { tableData: data, tableDiv: 'times-div-Regression_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Regression_Suite">
               </div> <!-- times-div-Regression_Suite -->
             </div> <!-- times-div -->
@@ -292,25 +616,143 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">fuelbuddyAutomationTest.LoginScreenTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">fuelbuddyAutomationTest.RegistrationScreenTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">21352 ms</span>
+                <span class="method-name">navigateToRegistrationPage</span>
+                <span class="method-start">10225 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testNavigateToLoginScreen</span>
-                <span class="method-start">21353 ms</span>
+                <span class="method-name">testFuelBuddyLogo</span>
+                <span class="method-start">16282 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">21357 ms</span>
-              </div> <!-- configuration-class after -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToRegistrationPage</span>
+                <span class="method-start">16343 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginToggleButtonDisplayed</span>
+                <span class="method-start">22696 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToRegistrationPage</span>
+                <span class="method-start">22756 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLoginToggleButtonClick</span>
+                <span class="method-start">28995 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToRegistrationPage</span>
+                <span class="method-start">29904 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testNameFieldText</span>
+                <span class="method-start">35948 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToRegistrationPage</span>
+                <span class="method-start">35995 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testNameFieldDisplayed</span>
+                <span class="method-start">42135 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToRegistrationPage</span>
+                <span class="method-start">42198 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testUsernameFieldText</span>
+                <span class="method-start">48264 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToRegistrationPage</span>
+                <span class="method-start">48320 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testUsernameFieldDisplayed</span>
+                <span class="method-start">54501 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToRegistrationPage</span>
+                <span class="method-start">54562 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPhoneNumberFieldText</span>
+                <span class="method-start">60696 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToRegistrationPage</span>
+                <span class="method-start">60751 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPhoneNumberFieldDisplayed</span>
+                <span class="method-start">66797 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToRegistrationPage</span>
+                <span class="method-start">66861 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPhoneNumberPrefixFieldDisaplys</span>
+                <span class="method-start">72830 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToRegistrationPage</span>
+                <span class="method-start">72891 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPhoneNumberPrefixFieldText</span>
+                <span class="method-start">78982 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToRegistrationPage</span>
+                <span class="method-start">79040 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRegisterButtonDisplayed</span>
+                <span class="method-start">85012 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToRegistrationPage</span>
+                <span class="method-start">85061 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRegisterButtonText</span>
+                <span class="method-start">91140 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToRegistrationPage</span>
+                <span class="method-start">91200 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testInvalidNameAndValidUsernameAndPhone</span>
+                <span class="method-start">97763 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToRegistrationPage</span>
+                <span class="method-start">100550 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testBlankNameAndValidUsernameAndPhone</span>
+                <span class="method-start">107232 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">navigateToRegistrationPage</span>
+                <span class="method-start">109495 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testValidNameAndInvalidUsernameAndPhone</span>
+                <span class="method-start">117585 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

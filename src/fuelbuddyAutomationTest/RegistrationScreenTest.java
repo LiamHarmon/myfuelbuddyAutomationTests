@@ -49,7 +49,7 @@ public class RegistrationScreenTest extends BaseTestClass {
 	public void testNameFieldText() {
 		RegistrationScreen registrationScreen = new RegistrationScreen(driver);
         String actualText = registrationScreen.getNameFieldText();
-        String expectedText = "Name";
+        String expectedText = "First Name";
         Assert.assertEquals(actualText, expectedText, "The Name field text does not match the expected value.");
 	}
 	
@@ -127,7 +127,7 @@ public class RegistrationScreenTest extends BaseTestClass {
 		registrationScreen.clickRegisterButton();
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions
-				.visibilityOfElementLocated(By.xpath("//android.widget.TextView[@text=\"Please Enter Your Full Name.\"]")));
+				.visibilityOfElementLocated(By.xpath("//android.widget.TextView[@text=\"Please enter a valid First Name\"]")));
 		Assert.assertTrue(registrationScreen.isElementPresent(), "The Invalid Name message was not displayed.");
 	}
 	
@@ -138,7 +138,7 @@ public class RegistrationScreenTest extends BaseTestClass {
 		registrationScreen.clickRegisterButton();
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions
-				.visibilityOfElementLocated(By.xpath("//android.widget.TextView[@text=\"Please enter your full name.\"]")));
+				.visibilityOfElementLocated(By.xpath("//android.widget.TextView[@text=\"Please enter a valid First Name\"]")));
 		Assert.assertTrue(registrationScreen.isElementPresent(), "The Name is required message was not displayed.");
 	}
 	
@@ -149,7 +149,7 @@ public class RegistrationScreenTest extends BaseTestClass {
 		registrationScreen.clickRegisterButton();
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(
-				By.xpath("//android.widget.TextView[@text=\"Username must be between 6-20 characters long. \"]")));
+				By.xpath("//android.widget.TextView[@text=\"Username must be between 6-20 characters inclusive\"]")));
 		Assert.assertTrue(registrationScreen.isElementPresent(), "The Invalid Username message was not displayed.");
 	}
 	
