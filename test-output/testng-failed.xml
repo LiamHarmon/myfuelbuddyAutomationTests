@@ -11,14 +11,20 @@
       </run>
     </groups>
     <classes>
-      <class name="fuelbuddyAutomationTest.RegistrationScreenTest">
+      <class name="fuelbuddyAutomationTest.LoginScreenTest">
         <methods>
-          <include name="testAllValidCredentials"/>
-          <include name="navigateToRegistrationPage"/>
-          <include name="testLoginToggleButtonClick"/>
+          <include name="testPhoneNumberTextField"/>
+          <include name="testInvalidPhoneNumber"/>
+          <include name="testCountryCodeField"/>
+          <include name="testCountryCodeTextField"/>
+          <include name="testValidPhoneNumber"/>
+          <include name="testFuelBuddyLogo"/>
+          <include name="testPhoneNumberField"/>
+          <include name="tearDown"/>
+          <include name="navigateToLoginPage"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- fuelbuddyAutomationTest.RegistrationScreenTest -->
+      </class> <!-- fuelbuddyAutomationTest.LoginScreenTest -->
     </classes>
   </test> <!-- Regression Test(failed) -->
 </suite> <!-- Failed suite [Regression Suite] -->

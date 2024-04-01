@@ -1,76 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="27" passed="25" failed="2" skipped="0">
+<testng-results ignored="0" total="14" passed="7" failed="0" skipped="7">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-01T17:59:33 IST" name="Regression Suite" finished-at="2024-04-01T18:02:58 IST" duration-ms="204668">
+  <suite started-at="2024-04-01T18:31:58 IST" name="Regression Suite" finished-at="2024-04-01T18:32:59 IST" duration-ms="61267">
     <groups>
       <group name="regression">
-        <method signature="RegistrationScreenTest.testAllValidCredentials()[pri:20, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" name="testAllValidCredentials" class="fuelbuddyAutomationTest.RegistrationScreenTest"/>
-        <method signature="RegistrationScreenTest.testBlankName()[pri:15, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" name="testBlankName" class="fuelbuddyAutomationTest.RegistrationScreenTest"/>
-        <method signature="RegistrationScreenTest.testBlankPhoneNumber()[pri:19, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" name="testBlankPhoneNumber" class="fuelbuddyAutomationTest.RegistrationScreenTest"/>
-        <method signature="RegistrationScreenTest.testBlankUsername()[pri:17, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" name="testBlankUsername" class="fuelbuddyAutomationTest.RegistrationScreenTest"/>
-        <method signature="RegistrationScreenTest.testFuelBuddyLogo()[pri:1, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" name="testFuelBuddyLogo" class="fuelbuddyAutomationTest.RegistrationScreenTest"/>
-        <method signature="RegistrationScreenTest.testInvalidName()[pri:14, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" name="testInvalidName" class="fuelbuddyAutomationTest.RegistrationScreenTest"/>
-        <method signature="RegistrationScreenTest.testInvalidPhoneNumber()[pri:18, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" name="testInvalidPhoneNumber" class="fuelbuddyAutomationTest.RegistrationScreenTest"/>
-        <method signature="RegistrationScreenTest.testInvalidUnsername()[pri:16, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" name="testInvalidUnsername" class="fuelbuddyAutomationTest.RegistrationScreenTest"/>
-        <method signature="RegistrationScreenTest.testLoginToggleButtonClick()[pri:3, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" name="testLoginToggleButtonClick" class="fuelbuddyAutomationTest.RegistrationScreenTest"/>
-        <method signature="RegistrationScreenTest.testLoginToggleButtonDisplayed()[pri:2, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" name="testLoginToggleButtonDisplayed" class="fuelbuddyAutomationTest.RegistrationScreenTest"/>
-        <method signature="RegistrationScreenTest.testNameFieldDisplayed()[pri:5, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" name="testNameFieldDisplayed" class="fuelbuddyAutomationTest.RegistrationScreenTest"/>
-        <method signature="RegistrationScreenTest.testNameFieldText()[pri:4, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" name="testNameFieldText" class="fuelbuddyAutomationTest.RegistrationScreenTest"/>
-        <method signature="RegistrationScreenTest.testPhoneNumberFieldDisplayed()[pri:9, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" name="testPhoneNumberFieldDisplayed" class="fuelbuddyAutomationTest.RegistrationScreenTest"/>
-        <method signature="RegistrationScreenTest.testPhoneNumberFieldText()[pri:8, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" name="testPhoneNumberFieldText" class="fuelbuddyAutomationTest.RegistrationScreenTest"/>
-        <method signature="RegistrationScreenTest.testPhoneNumberPrefixFieldDisaplys()[pri:10, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" name="testPhoneNumberPrefixFieldDisaplys" class="fuelbuddyAutomationTest.RegistrationScreenTest"/>
-        <method signature="RegistrationScreenTest.testPhoneNumberPrefixFieldText()[pri:11, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" name="testPhoneNumberPrefixFieldText" class="fuelbuddyAutomationTest.RegistrationScreenTest"/>
-        <method signature="RegistrationScreenTest.testRegisterButtonDisplayed()[pri:12, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" name="testRegisterButtonDisplayed" class="fuelbuddyAutomationTest.RegistrationScreenTest"/>
-        <method signature="RegistrationScreenTest.testRegisterButtonText()[pri:13, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" name="testRegisterButtonText" class="fuelbuddyAutomationTest.RegistrationScreenTest"/>
-        <method signature="RegistrationScreenTest.testUsernameFieldDisplayed()[pri:7, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" name="testUsernameFieldDisplayed" class="fuelbuddyAutomationTest.RegistrationScreenTest"/>
-        <method signature="RegistrationScreenTest.testUsernameFieldText()[pri:6, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" name="testUsernameFieldText" class="fuelbuddyAutomationTest.RegistrationScreenTest"/>
-        <method signature="WelcomeScreenTest.testClickGetStartedButton()[pri:7, instance:fuelbuddyAutomationTest.WelcomeScreenTest@470734c3]" name="testClickGetStartedButton" class="fuelbuddyAutomationTest.WelcomeScreenTest"/>
-        <method signature="WelcomeScreenTest.testFuelBuddyLogo()[pri:1, instance:fuelbuddyAutomationTest.WelcomeScreenTest@470734c3]" name="testFuelBuddyLogo" class="fuelbuddyAutomationTest.WelcomeScreenTest"/>
-        <method signature="WelcomeScreenTest.testFuelStationImage()[pri:4, instance:fuelbuddyAutomationTest.WelcomeScreenTest@470734c3]" name="testFuelStationImage" class="fuelbuddyAutomationTest.WelcomeScreenTest"/>
-        <method signature="WelcomeScreenTest.testGetStartedButtonDisplay()[pri:5, instance:fuelbuddyAutomationTest.WelcomeScreenTest@470734c3]" name="testGetStartedButtonDisplay" class="fuelbuddyAutomationTest.WelcomeScreenTest"/>
-        <method signature="WelcomeScreenTest.testGetStartedText()[pri:6, instance:fuelbuddyAutomationTest.WelcomeScreenTest@470734c3]" name="testGetStartedText" class="fuelbuddyAutomationTest.WelcomeScreenTest"/>
-        <method signature="WelcomeScreenTest.testWelcomeSloganText()[pri:3, instance:fuelbuddyAutomationTest.WelcomeScreenTest@470734c3]" name="testWelcomeSloganText" class="fuelbuddyAutomationTest.WelcomeScreenTest"/>
-        <method signature="WelcomeScreenTest.testWelcomeText()[pri:2, instance:fuelbuddyAutomationTest.WelcomeScreenTest@470734c3]" name="testWelcomeText" class="fuelbuddyAutomationTest.WelcomeScreenTest"/>
+        <method signature="LoginScreenTest.testCountryCodeField()[pri:4, instance:fuelbuddyAutomationTest.LoginScreenTest@449a4f23]" name="testCountryCodeField" class="fuelbuddyAutomationTest.LoginScreenTest"/>
+        <method signature="LoginScreenTest.testCountryCodeTextField()[pri:5, instance:fuelbuddyAutomationTest.LoginScreenTest@449a4f23]" name="testCountryCodeTextField" class="fuelbuddyAutomationTest.LoginScreenTest"/>
+        <method signature="LoginScreenTest.testFuelBuddyLogo()[pri:1, instance:fuelbuddyAutomationTest.LoginScreenTest@449a4f23]" name="testFuelBuddyLogo" class="fuelbuddyAutomationTest.LoginScreenTest"/>
+        <method signature="LoginScreenTest.testInvalidPhoneNumber()[pri:18, instance:fuelbuddyAutomationTest.LoginScreenTest@449a4f23]" name="testInvalidPhoneNumber" class="fuelbuddyAutomationTest.LoginScreenTest"/>
+        <method signature="LoginScreenTest.testPhoneNumberField()[pri:3, instance:fuelbuddyAutomationTest.LoginScreenTest@449a4f23]" name="testPhoneNumberField" class="fuelbuddyAutomationTest.LoginScreenTest"/>
+        <method signature="LoginScreenTest.testPhoneNumberTextField()[pri:2, instance:fuelbuddyAutomationTest.LoginScreenTest@449a4f23]" name="testPhoneNumberTextField" class="fuelbuddyAutomationTest.LoginScreenTest"/>
+        <method signature="LoginScreenTest.testValidPhoneNumber()[pri:19, instance:fuelbuddyAutomationTest.LoginScreenTest@449a4f23]" name="testValidPhoneNumber" class="fuelbuddyAutomationTest.LoginScreenTest"/>
+        <method signature="WelcomeScreenTest.testClickGetStartedButton()[pri:7, instance:fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2]" name="testClickGetStartedButton" class="fuelbuddyAutomationTest.WelcomeScreenTest"/>
+        <method signature="WelcomeScreenTest.testFuelBuddyLogo()[pri:1, instance:fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2]" name="testFuelBuddyLogo" class="fuelbuddyAutomationTest.WelcomeScreenTest"/>
+        <method signature="WelcomeScreenTest.testFuelStationImage()[pri:4, instance:fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2]" name="testFuelStationImage" class="fuelbuddyAutomationTest.WelcomeScreenTest"/>
+        <method signature="WelcomeScreenTest.testGetStartedButtonDisplay()[pri:5, instance:fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2]" name="testGetStartedButtonDisplay" class="fuelbuddyAutomationTest.WelcomeScreenTest"/>
+        <method signature="WelcomeScreenTest.testGetStartedText()[pri:6, instance:fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2]" name="testGetStartedText" class="fuelbuddyAutomationTest.WelcomeScreenTest"/>
+        <method signature="WelcomeScreenTest.testWelcomeSloganText()[pri:3, instance:fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2]" name="testWelcomeSloganText" class="fuelbuddyAutomationTest.WelcomeScreenTest"/>
+        <method signature="WelcomeScreenTest.testWelcomeText()[pri:2, instance:fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2]" name="testWelcomeText" class="fuelbuddyAutomationTest.WelcomeScreenTest"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="RegistrationScreenTest.testAllValidCredentials()[pri:20, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" name="testAllValidCredentials" class="fuelbuddyAutomationTest.RegistrationScreenTest"/>
-        <method signature="RegistrationScreenTest.testBlankName()[pri:15, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" name="testBlankName" class="fuelbuddyAutomationTest.RegistrationScreenTest"/>
-        <method signature="RegistrationScreenTest.testBlankPhoneNumber()[pri:19, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" name="testBlankPhoneNumber" class="fuelbuddyAutomationTest.RegistrationScreenTest"/>
-        <method signature="RegistrationScreenTest.testBlankUsername()[pri:17, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" name="testBlankUsername" class="fuelbuddyAutomationTest.RegistrationScreenTest"/>
-        <method signature="RegistrationScreenTest.testInvalidName()[pri:14, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" name="testInvalidName" class="fuelbuddyAutomationTest.RegistrationScreenTest"/>
-        <method signature="RegistrationScreenTest.testInvalidPhoneNumber()[pri:18, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" name="testInvalidPhoneNumber" class="fuelbuddyAutomationTest.RegistrationScreenTest"/>
-        <method signature="RegistrationScreenTest.testInvalidUnsername()[pri:16, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" name="testInvalidUnsername" class="fuelbuddyAutomationTest.RegistrationScreenTest"/>
-        <method signature="WelcomeScreenTest.testClickGetStartedButton()[pri:7, instance:fuelbuddyAutomationTest.WelcomeScreenTest@470734c3]" name="testClickGetStartedButton" class="fuelbuddyAutomationTest.WelcomeScreenTest"/>
+        <method signature="LoginScreenTest.testInvalidPhoneNumber()[pri:18, instance:fuelbuddyAutomationTest.LoginScreenTest@449a4f23]" name="testInvalidPhoneNumber" class="fuelbuddyAutomationTest.LoginScreenTest"/>
+        <method signature="LoginScreenTest.testValidPhoneNumber()[pri:19, instance:fuelbuddyAutomationTest.LoginScreenTest@449a4f23]" name="testValidPhoneNumber" class="fuelbuddyAutomationTest.LoginScreenTest"/>
+        <method signature="WelcomeScreenTest.testClickGetStartedButton()[pri:7, instance:fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2]" name="testClickGetStartedButton" class="fuelbuddyAutomationTest.WelcomeScreenTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-04-01T17:59:33 IST" name="Regression Test" finished-at="2024-04-01T18:02:58 IST" duration-ms="204668">
-      <class name="fuelbuddyAutomationTest.RegistrationScreenTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:00:21 IST" name="setUp" finished-at="2024-04-01T18:00:30 IST" duration-ms="8709" status="PASS">
+    <test started-at="2024-04-01T18:31:58 IST" name="Regression Test" finished-at="2024-04-01T18:32:59 IST" duration-ms="61267">
+      <class name="fuelbuddyAutomationTest.WelcomeScreenTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2]" started-at="2024-04-01T18:31:58 IST" name="setUp" finished-at="2024-04-01T18:32:08 IST" duration-ms="10127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="navigateToRegistrationPage()[pri:0, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:00:30 IST" name="navigateToRegistrationPage" finished-at="2024-04-01T18:00:35 IST" duration-ms="5934" status="PASS">
+        <test-method is-config="true" signature="setUpEach()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2]" started-at="2024-04-01T18:32:08 IST" name="setUpEach" finished-at="2024-04-01T18:32:12 IST" duration-ms="4022" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigateToRegistrationPage -->
-        <test-method signature="testFuelBuddyLogo()[pri:1, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:00:35 IST" name="testFuelBuddyLogo" finished-at="2024-04-01T18:00:36 IST" duration-ms="53" status="PASS">
+        </test-method> <!-- setUpEach -->
+        <test-method signature="testFuelBuddyLogo()[pri:1, instance:fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2]" started-at="2024-04-01T18:32:12 IST" name="testFuelBuddyLogo" finished-at="2024-04-01T18:32:13 IST" duration-ms="1300" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFuelBuddyLogo -->
-        <test-method is-config="true" signature="navigateToRegistrationPage()[pri:0, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:00:36 IST" name="navigateToRegistrationPage" finished-at="2024-04-01T18:00:42 IST" duration-ms="6318" status="PASS">
+        <test-method is-config="true" signature="setUpEach()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2]" started-at="2024-04-01T18:32:13 IST" name="setUpEach" finished-at="2024-04-01T18:32:17 IST" duration-ms="3877" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigateToRegistrationPage -->
-        <test-method signature="testLoginToggleButtonDisplayed()[pri:2, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:00:42 IST" name="testLoginToggleButtonDisplayed" finished-at="2024-04-01T18:00:42 IST" duration-ms="55" status="PASS">
+        </test-method> <!-- setUpEach -->
+        <test-method signature="testWelcomeText()[pri:2, instance:fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2]" started-at="2024-04-01T18:32:17 IST" name="testWelcomeText" finished-at="2024-04-01T18:32:19 IST" duration-ms="1319" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginToggleButtonDisplayed -->
-        <test-method is-config="true" signature="navigateToRegistrationPage()[pri:0, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:00:42 IST" name="navigateToRegistrationPage" finished-at="2024-04-01T18:00:48 IST" duration-ms="6143" status="PASS">
+        </test-method> <!-- testWelcomeText -->
+        <test-method is-config="true" signature="setUpEach()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2]" started-at="2024-04-01T18:32:19 IST" name="setUpEach" finished-at="2024-04-01T18:32:22 IST" duration-ms="3901" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigateToRegistrationPage -->
-        <test-method signature="testLoginToggleButtonClick()[pri:3, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:00:48 IST" name="testLoginToggleButtonClick" finished-at="2024-04-01T18:00:49 IST" duration-ms="872" status="FAIL">
+        </test-method> <!-- setUpEach -->
+        <test-method signature="testWelcomeSloganText()[pri:3, instance:fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2]" started-at="2024-04-01T18:32:22 IST" name="testWelcomeSloganText" finished-at="2024-04-01T18:32:24 IST" duration-ms="1334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWelcomeSloganText -->
+        <test-method is-config="true" signature="setUpEach()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2]" started-at="2024-04-01T18:32:24 IST" name="setUpEach" finished-at="2024-04-01T18:32:27 IST" duration-ms="3740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpEach -->
+        <test-method signature="testFuelStationImage()[pri:4, instance:fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2]" started-at="2024-04-01T18:32:27 IST" name="testFuelStationImage" finished-at="2024-04-01T18:32:29 IST" duration-ms="1314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFuelStationImage -->
+        <test-method is-config="true" signature="setUpEach()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2]" started-at="2024-04-01T18:32:29 IST" name="setUpEach" finished-at="2024-04-01T18:32:33 IST" duration-ms="3895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpEach -->
+        <test-method signature="testGetStartedButtonDisplay()[pri:5, instance:fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2]" started-at="2024-04-01T18:32:33 IST" name="testGetStartedButtonDisplay" finished-at="2024-04-01T18:32:34 IST" duration-ms="1330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetStartedButtonDisplay -->
+        <test-method is-config="true" signature="setUpEach()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2]" started-at="2024-04-01T18:32:34 IST" name="setUpEach" finished-at="2024-04-01T18:32:38 IST" duration-ms="3884" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpEach -->
+        <test-method signature="testGetStartedText()[pri:6, instance:fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2]" started-at="2024-04-01T18:32:38 IST" name="testGetStartedText" finished-at="2024-04-01T18:32:39 IST" duration-ms="1314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetStartedText -->
+        <test-method is-config="true" signature="setUpEach()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2]" started-at="2024-04-01T18:32:39 IST" name="setUpEach" finished-at="2024-04-01T18:32:44 IST" duration-ms="4765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpEach -->
+        <test-method signature="testClickGetStartedButton()[pri:7, instance:fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2]" started-at="2024-04-01T18:32:44 IST" name="testClickGetStartedButton" finished-at="2024-04-01T18:32:46 IST" duration-ms="2130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClickGetStartedButton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2]" started-at="2024-04-01T18:32:46 IST" name="tearDown" finished-at="2024-04-01T18:32:46 IST" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- fuelbuddyAutomationTest.WelcomeScreenTest -->
+      <class name="fuelbuddyAutomationTest.LoginScreenTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:fuelbuddyAutomationTest.LoginScreenTest@449a4f23]" started-at="2024-04-01T18:32:46 IST" name="setUp" finished-at="2024-04-01T18:32:55 IST" duration-ms="8691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="navigateToLoginPage()[pri:0, instance:fuelbuddyAutomationTest.LoginScreenTest@449a4f23]" started-at="2024-04-01T18:32:55 IST" name="navigateToLoginPage" finished-at="2024-04-01T18:32:59 IST" duration-ms="4011" status="FAIL">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13]]>
@@ -86,13 +114,17 @@ at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
 at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
 at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
 at fuelbuddyAutomation.LoginScreen.<init>(LoginScreen.java:21)
-at fuelbuddyAutomationTest.RegistrationScreenTest.testLoginToggleButtonClick(RegistrationScreenTest.java:45)
+at fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage(LoginScreenTest.java:18)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -120,155 +152,34 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginToggleButtonClick -->
-        <test-method is-config="true" signature="navigateToRegistrationPage()[pri:0, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:00:49 IST" name="navigateToRegistrationPage" finished-at="2024-04-01T18:00:55 IST" duration-ms="6061" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToRegistrationPage -->
-        <test-method signature="testNameFieldText()[pri:4, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:00:55 IST" name="testNameFieldText" finished-at="2024-04-01T18:00:55 IST" duration-ms="55" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNameFieldText -->
-        <test-method is-config="true" signature="navigateToRegistrationPage()[pri:0, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:00:55 IST" name="navigateToRegistrationPage" finished-at="2024-04-01T18:01:01 IST" duration-ms="5882" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToRegistrationPage -->
-        <test-method signature="testNameFieldDisplayed()[pri:5, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:01:01 IST" name="testNameFieldDisplayed" finished-at="2024-04-01T18:01:01 IST" duration-ms="61" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNameFieldDisplayed -->
-        <test-method is-config="true" signature="navigateToRegistrationPage()[pri:0, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:01:01 IST" name="navigateToRegistrationPage" finished-at="2024-04-01T18:01:07 IST" duration-ms="6233" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToRegistrationPage -->
-        <test-method signature="testUsernameFieldText()[pri:6, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:01:07 IST" name="testUsernameFieldText" finished-at="2024-04-01T18:01:07 IST" duration-ms="58" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUsernameFieldText -->
-        <test-method is-config="true" signature="navigateToRegistrationPage()[pri:0, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:01:07 IST" name="navigateToRegistrationPage" finished-at="2024-04-01T18:01:13 IST" duration-ms="5957" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToRegistrationPage -->
-        <test-method signature="testUsernameFieldDisplayed()[pri:7, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:01:13 IST" name="testUsernameFieldDisplayed" finished-at="2024-04-01T18:01:13 IST" duration-ms="59" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUsernameFieldDisplayed -->
-        <test-method is-config="true" signature="navigateToRegistrationPage()[pri:0, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:01:13 IST" name="navigateToRegistrationPage" finished-at="2024-04-01T18:01:20 IST" duration-ms="6224" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToRegistrationPage -->
-        <test-method signature="testPhoneNumberFieldText()[pri:8, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:01:20 IST" name="testPhoneNumberFieldText" finished-at="2024-04-01T18:01:20 IST" duration-ms="48" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPhoneNumberFieldText -->
-        <test-method is-config="true" signature="navigateToRegistrationPage()[pri:0, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:01:20 IST" name="navigateToRegistrationPage" finished-at="2024-04-01T18:01:25 IST" duration-ms="5835" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToRegistrationPage -->
-        <test-method signature="testPhoneNumberFieldDisplayed()[pri:9, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:01:25 IST" name="testPhoneNumberFieldDisplayed" finished-at="2024-04-01T18:01:25 IST" duration-ms="53" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPhoneNumberFieldDisplayed -->
-        <test-method is-config="true" signature="navigateToRegistrationPage()[pri:0, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:01:25 IST" name="navigateToRegistrationPage" finished-at="2024-04-01T18:01:31 IST" duration-ms="6028" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToRegistrationPage -->
-        <test-method signature="testPhoneNumberPrefixFieldDisaplys()[pri:10, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:01:31 IST" name="testPhoneNumberPrefixFieldDisaplys" finished-at="2024-04-01T18:01:32 IST" duration-ms="51" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPhoneNumberPrefixFieldDisaplys -->
-        <test-method is-config="true" signature="navigateToRegistrationPage()[pri:0, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:01:32 IST" name="navigateToRegistrationPage" finished-at="2024-04-01T18:01:38 IST" duration-ms="5997" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToRegistrationPage -->
-        <test-method signature="testPhoneNumberPrefixFieldText()[pri:11, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:01:38 IST" name="testPhoneNumberPrefixFieldText" finished-at="2024-04-01T18:01:38 IST" duration-ms="60" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPhoneNumberPrefixFieldText -->
-        <test-method is-config="true" signature="navigateToRegistrationPage()[pri:0, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:01:38 IST" name="navigateToRegistrationPage" finished-at="2024-04-01T18:01:44 IST" duration-ms="5956" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToRegistrationPage -->
-        <test-method signature="testRegisterButtonDisplayed()[pri:12, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:01:44 IST" name="testRegisterButtonDisplayed" finished-at="2024-04-01T18:01:44 IST" duration-ms="51" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRegisterButtonDisplayed -->
-        <test-method is-config="true" signature="navigateToRegistrationPage()[pri:0, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:01:44 IST" name="navigateToRegistrationPage" finished-at="2024-04-01T18:01:49 IST" duration-ms="5818" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToRegistrationPage -->
-        <test-method signature="testRegisterButtonText()[pri:13, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:01:49 IST" name="testRegisterButtonText" finished-at="2024-04-01T18:01:49 IST" duration-ms="45" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRegisterButtonText -->
-        <test-method is-config="true" signature="navigateToRegistrationPage()[pri:0, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:01:49 IST" name="navigateToRegistrationPage" finished-at="2024-04-01T18:01:55 IST" duration-ms="5954" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToRegistrationPage -->
-        <test-method signature="testInvalidName()[pri:14, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:01:55 IST" name="testInvalidName" finished-at="2024-04-01T18:01:58 IST" duration-ms="2720" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInvalidName -->
-        <test-method is-config="true" signature="navigateToRegistrationPage()[pri:0, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:01:58 IST" name="navigateToRegistrationPage" finished-at="2024-04-01T18:02:04 IST" duration-ms="5921" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToRegistrationPage -->
-        <test-method signature="testBlankName()[pri:15, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:02:04 IST" name="testBlankName" finished-at="2024-04-01T18:02:06 IST" duration-ms="2222" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBlankName -->
-        <test-method is-config="true" signature="navigateToRegistrationPage()[pri:0, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:02:06 IST" name="navigateToRegistrationPage" finished-at="2024-04-01T18:02:12 IST" duration-ms="5884" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToRegistrationPage -->
-        <test-method signature="testInvalidUnsername()[pri:16, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:02:12 IST" name="testInvalidUnsername" finished-at="2024-04-01T18:02:15 IST" duration-ms="2718" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInvalidUnsername -->
-        <test-method is-config="true" signature="navigateToRegistrationPage()[pri:0, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:02:15 IST" name="navigateToRegistrationPage" finished-at="2024-04-01T18:02:21 IST" duration-ms="6015" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToRegistrationPage -->
-        <test-method signature="testBlankUsername()[pri:17, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:02:21 IST" name="testBlankUsername" finished-at="2024-04-01T18:02:23 IST" duration-ms="2207" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBlankUsername -->
-        <test-method is-config="true" signature="navigateToRegistrationPage()[pri:0, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:02:23 IST" name="navigateToRegistrationPage" finished-at="2024-04-01T18:02:29 IST" duration-ms="5957" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToRegistrationPage -->
-        <test-method signature="testInvalidPhoneNumber()[pri:18, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:02:29 IST" name="testInvalidPhoneNumber" finished-at="2024-04-01T18:02:32 IST" duration-ms="2737" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInvalidPhoneNumber -->
-        <test-method is-config="true" signature="navigateToRegistrationPage()[pri:0, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:02:32 IST" name="navigateToRegistrationPage" finished-at="2024-04-01T18:02:38 IST" duration-ms="5945" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToRegistrationPage -->
-        <test-method signature="testBlankPhoneNumber()[pri:19, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:02:38 IST" name="testBlankPhoneNumber" finished-at="2024-04-01T18:02:40 IST" duration-ms="2176" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBlankPhoneNumber -->
-        <test-method is-config="true" signature="navigateToRegistrationPage()[pri:0, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:02:40 IST" name="navigateToRegistrationPage" finished-at="2024-04-01T18:02:46 IST" duration-ms="5991" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToRegistrationPage -->
-        <test-method signature="testAllValidCredentials()[pri:20, instance:fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5]" started-at="2024-04-01T18:02:46 IST" name="testAllValidCredentials" finished-at="2024-04-01T18:02:58 IST" duration-ms="11921" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
+        </test-method> <!-- navigateToLoginPage -->
+        <test-method signature="testFuelBuddyLogo()[pri:1, instance:fuelbuddyAutomationTest.LoginScreenTest@449a4f23]" started-at="2024-04-01T18:32:59 IST" name="testFuelBuddyLogo" finished-at="2024-04-01T18:32:59 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalArgumentException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.TextView[@text="Verification Code"] (tried for 10 second(s) with 500 milliseconds interval)]]>
+              <![CDATA[Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.TextView[@text="Verification Code"] (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
-at fuelbuddyAutomationTest.RegistrationScreenTest.testAllValidCredentials(RegistrationScreenTest.java:197)
+              <![CDATA[java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13
+at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+at java.base/java.lang.reflect.Field.set(Field.java:799)
+at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+at fuelbuddyAutomation.LoginScreen.<init>(LoginScreen.java:21)
+at fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage(LoginScreenTest.java:18)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -291,92 +202,371 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //android.widget.TextView[@text="Verification Code"]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'LIAM', ip: '192.168.1.16', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-at java.base/java.util.Optional.orElseThrow(Optional.java:403)
-at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-... 29 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAllValidCredentials -->
-      </class> <!-- fuelbuddyAutomationTest.RegistrationScreenTest -->
-      <class name="fuelbuddyAutomationTest.WelcomeScreenTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@470734c3]" started-at="2024-04-01T17:59:33 IST" name="setUp" finished-at="2024-04-01T17:59:43 IST" duration-ms="10128" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpEach()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@470734c3]" started-at="2024-04-01T17:59:43 IST" name="setUpEach" finished-at="2024-04-01T17:59:47 IST" duration-ms="3882" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpEach -->
-        <test-method signature="testFuelBuddyLogo()[pri:1, instance:fuelbuddyAutomationTest.WelcomeScreenTest@470734c3]" started-at="2024-04-01T17:59:47 IST" name="testFuelBuddyLogo" finished-at="2024-04-01T17:59:48 IST" duration-ms="1277" status="PASS">
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFuelBuddyLogo -->
-        <test-method is-config="true" signature="setUpEach()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@470734c3]" started-at="2024-04-01T17:59:48 IST" name="setUpEach" finished-at="2024-04-01T17:59:52 IST" duration-ms="3833" status="PASS">
+        <test-method signature="testPhoneNumberTextField()[pri:2, instance:fuelbuddyAutomationTest.LoginScreenTest@449a4f23]" started-at="2024-04-01T18:32:59 IST" name="testPhoneNumberTextField" finished-at="2024-04-01T18:32:59 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13
+at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+at java.base/java.lang.reflect.Field.set(Field.java:799)
+at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+at fuelbuddyAutomation.LoginScreen.<init>(LoginScreen.java:21)
+at fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage(LoginScreenTest.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpEach -->
-        <test-method signature="testWelcomeText()[pri:2, instance:fuelbuddyAutomationTest.WelcomeScreenTest@470734c3]" started-at="2024-04-01T17:59:52 IST" name="testWelcomeText" finished-at="2024-04-01T17:59:54 IST" duration-ms="1280" status="PASS">
+        </test-method> <!-- testPhoneNumberTextField -->
+        <test-method is-config="true" signature="navigateToLoginPage()[pri:0, instance:fuelbuddyAutomationTest.LoginScreenTest@449a4f23]" started-at="2024-04-01T18:32:59 IST" name="navigateToLoginPage" finished-at="1970-01-01T01:00:00 IST" duration-ms="-1711992779601" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testWelcomeText -->
-        <test-method is-config="true" signature="setUpEach()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@470734c3]" started-at="2024-04-01T17:59:54 IST" name="setUpEach" finished-at="2024-04-01T17:59:57 IST" duration-ms="3800" status="PASS">
+        </test-method> <!-- navigateToLoginPage -->
+        <test-method is-config="true" signature="navigateToLoginPage()[pri:0, instance:fuelbuddyAutomationTest.LoginScreenTest@449a4f23]" started-at="2024-04-01T18:32:59 IST" name="navigateToLoginPage" finished-at="1970-01-01T01:00:00 IST" duration-ms="-1711992779603" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpEach -->
-        <test-method signature="testWelcomeSloganText()[pri:3, instance:fuelbuddyAutomationTest.WelcomeScreenTest@470734c3]" started-at="2024-04-01T17:59:57 IST" name="testWelcomeSloganText" finished-at="2024-04-01T17:59:59 IST" duration-ms="1273" status="PASS">
+        </test-method> <!-- navigateToLoginPage -->
+        <test-method signature="testPhoneNumberField()[pri:3, instance:fuelbuddyAutomationTest.LoginScreenTest@449a4f23]" started-at="2024-04-01T18:32:59 IST" name="testPhoneNumberField" finished-at="2024-04-01T18:32:59 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13
+at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+at java.base/java.lang.reflect.Field.set(Field.java:799)
+at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+at fuelbuddyAutomation.LoginScreen.<init>(LoginScreen.java:21)
+at fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage(LoginScreenTest.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testWelcomeSloganText -->
-        <test-method is-config="true" signature="setUpEach()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@470734c3]" started-at="2024-04-01T17:59:59 IST" name="setUpEach" finished-at="2024-04-01T18:00:02 IST" duration-ms="3817" status="PASS">
+        </test-method> <!-- testPhoneNumberField -->
+        <test-method signature="testCountryCodeField()[pri:4, instance:fuelbuddyAutomationTest.LoginScreenTest@449a4f23]" started-at="2024-04-01T18:32:59 IST" name="testCountryCodeField" finished-at="2024-04-01T18:32:59 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13
+at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+at java.base/java.lang.reflect.Field.set(Field.java:799)
+at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+at fuelbuddyAutomation.LoginScreen.<init>(LoginScreen.java:21)
+at fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage(LoginScreenTest.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpEach -->
-        <test-method signature="testFuelStationImage()[pri:4, instance:fuelbuddyAutomationTest.WelcomeScreenTest@470734c3]" started-at="2024-04-01T18:00:02 IST" name="testFuelStationImage" finished-at="2024-04-01T18:00:04 IST" duration-ms="1290" status="PASS">
+        </test-method> <!-- testCountryCodeField -->
+        <test-method is-config="true" signature="navigateToLoginPage()[pri:0, instance:fuelbuddyAutomationTest.LoginScreenTest@449a4f23]" started-at="2024-04-01T18:32:59 IST" name="navigateToLoginPage" finished-at="1970-01-01T01:00:00 IST" duration-ms="-1711992779606" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testFuelStationImage -->
-        <test-method is-config="true" signature="setUpEach()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@470734c3]" started-at="2024-04-01T18:00:04 IST" name="setUpEach" finished-at="2024-04-01T18:00:08 IST" duration-ms="3893" status="PASS">
+        </test-method> <!-- navigateToLoginPage -->
+        <test-method signature="testCountryCodeTextField()[pri:5, instance:fuelbuddyAutomationTest.LoginScreenTest@449a4f23]" started-at="2024-04-01T18:32:59 IST" name="testCountryCodeTextField" finished-at="2024-04-01T18:32:59 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13
+at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+at java.base/java.lang.reflect.Field.set(Field.java:799)
+at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+at fuelbuddyAutomation.LoginScreen.<init>(LoginScreen.java:21)
+at fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage(LoginScreenTest.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpEach -->
-        <test-method signature="testGetStartedButtonDisplay()[pri:5, instance:fuelbuddyAutomationTest.WelcomeScreenTest@470734c3]" started-at="2024-04-01T18:00:08 IST" name="testGetStartedButtonDisplay" finished-at="2024-04-01T18:00:09 IST" duration-ms="1289" status="PASS">
+        </test-method> <!-- testCountryCodeTextField -->
+        <test-method is-config="true" signature="navigateToLoginPage()[pri:0, instance:fuelbuddyAutomationTest.LoginScreenTest@449a4f23]" started-at="2024-04-01T18:32:59 IST" name="navigateToLoginPage" finished-at="1970-01-01T01:00:00 IST" duration-ms="-1711992779608" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGetStartedButtonDisplay -->
-        <test-method is-config="true" signature="setUpEach()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@470734c3]" started-at="2024-04-01T18:00:09 IST" name="setUpEach" finished-at="2024-04-01T18:00:13 IST" duration-ms="4031" status="PASS">
+        </test-method> <!-- navigateToLoginPage -->
+        <test-method is-config="true" signature="navigateToLoginPage()[pri:0, instance:fuelbuddyAutomationTest.LoginScreenTest@449a4f23]" started-at="2024-04-01T18:32:59 IST" name="navigateToLoginPage" finished-at="1970-01-01T01:00:00 IST" duration-ms="-1711992779610" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpEach -->
-        <test-method signature="testGetStartedText()[pri:6, instance:fuelbuddyAutomationTest.WelcomeScreenTest@470734c3]" started-at="2024-04-01T18:00:13 IST" name="testGetStartedText" finished-at="2024-04-01T18:00:15 IST" duration-ms="1559" status="PASS">
+        </test-method> <!-- navigateToLoginPage -->
+        <test-method signature="testInvalidPhoneNumber()[pri:18, instance:fuelbuddyAutomationTest.LoginScreenTest@449a4f23]" started-at="2024-04-01T18:32:59 IST" name="testInvalidPhoneNumber" finished-at="2024-04-01T18:32:59 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13
+at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+at java.base/java.lang.reflect.Field.set(Field.java:799)
+at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+at fuelbuddyAutomation.LoginScreen.<init>(LoginScreen.java:21)
+at fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage(LoginScreenTest.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGetStartedText -->
-        <test-method is-config="true" signature="setUpEach()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@470734c3]" started-at="2024-04-01T18:00:15 IST" name="setUpEach" finished-at="2024-04-01T18:00:19 IST" duration-ms="3958" status="PASS">
+        </test-method> <!-- testInvalidPhoneNumber -->
+        <test-method is-config="true" signature="navigateToLoginPage()[pri:0, instance:fuelbuddyAutomationTest.LoginScreenTest@449a4f23]" started-at="2024-04-01T18:32:59 IST" name="navigateToLoginPage" finished-at="1970-01-01T01:00:00 IST" duration-ms="-1711992779612" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpEach -->
-        <test-method signature="testClickGetStartedButton()[pri:7, instance:fuelbuddyAutomationTest.WelcomeScreenTest@470734c3]" started-at="2024-04-01T18:00:19 IST" name="testClickGetStartedButton" finished-at="2024-04-01T18:00:21 IST" duration-ms="2076" status="PASS">
+        </test-method> <!-- navigateToLoginPage -->
+        <test-method signature="testValidPhoneNumber()[pri:19, instance:fuelbuddyAutomationTest.LoginScreenTest@449a4f23]" started-at="2024-04-01T18:32:59 IST" name="testValidPhoneNumber" finished-at="2024-04-01T18:32:59 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13
+at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+at java.base/java.lang.reflect.Field.set(Field.java:799)
+at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+at fuelbuddyAutomation.LoginScreen.<init>(LoginScreen.java:21)
+at fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage(LoginScreenTest.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testClickGetStartedButton -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:fuelbuddyAutomationTest.WelcomeScreenTest@470734c3]" started-at="2024-04-01T18:00:21 IST" name="tearDown" finished-at="2024-04-01T18:00:21 IST" duration-ms="246" status="PASS">
+        </test-method> <!-- testValidPhoneNumber -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:fuelbuddyAutomationTest.LoginScreenTest@449a4f23]" started-at="2024-04-01T18:32:59 IST" name="tearDown" finished-at="1970-01-01T01:00:00 IST" duration-ms="-1711992779614" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- fuelbuddyAutomationTest.WelcomeScreenTest -->
+      </class> <!-- fuelbuddyAutomationTest.LoginScreenTest -->
     </test> <!-- Regression Test -->
   </suite> <!-- Regression Suite -->
 </testng-results>

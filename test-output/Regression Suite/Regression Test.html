@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Regression Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>25/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/7</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Apr 01 17:59:33 IST 2024</td>
+<td>Started on:</td><td>Mon Apr 01 18:31:58 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>204 seconds (204668 ms)</td>
+<tr><td>Total time:</td><td>61 seconds (61267 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>regression </td>
 </tr><tr>
@@ -68,24 +68,24 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testLoginToggleButtonClick()'><b>testLoginToggleButtonClick</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td title='fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage()'><b>navigateToLoginPage</b><br>Test class: fuelbuddyAutomationTest.LoginScreenTest</td>
 <td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13
 	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
 	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
 	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
 	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
 	at fuelbuddyAutomation.LoginScreen.&lt;init&gt;(LoginScreen.java:21)
-	at fuelbuddyAutomationTest.RegistrationScreenTest.testLoginToggleButtonClick(RegistrationScreenTest.java:45)
+	at fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage(LoginScreenTest.java:18)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2078239671", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2078239671'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1195064186", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1195064186'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13
 	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
 	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
 	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
@@ -95,13 +95,17 @@ function toggleAllBoxes() {
 	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
 	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
 	at fuelbuddyAutomation.LoginScreen.&lt;init&gt;(LoginScreen.java:21)
-	at fuelbuddyAutomationTest.RegistrationScreenTest.testLoginToggleButtonClick(RegistrationScreenTest.java:45)
+	at fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage(LoginScreenTest.java:18)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -125,77 +129,51 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5</td></tr>
+<td>4</td>
+<td>fuelbuddyAutomationTest.LoginScreenTest@449a4f23</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testAllValidCredentials()'><b>testAllValidCredentials</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.TextView[@text=&quot;Verification Code&quot;] (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
-	at fuelbuddyAutomationTest.RegistrationScreenTest.testAllValidCredentials(RegistrationScreenTest.java:197)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //android.widget.TextView[@text=&quot;Verification Code&quot;]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
-System info: host: &apos;LIAM&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	... 29 more
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1008612116", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1008612116'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.TextView[@text=&quot;Verification Code&quot;] (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
-	at fuelbuddyAutomationTest.RegistrationScreenTest.testAllValidCredentials(RegistrationScreenTest.java:197)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //android.widget.TextView[@text=&quot;Verification Code&quot;]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
-System info: host: &apos;LIAM&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	... 29 more
-</pre></div></td>
-<td>11</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5</td></tr>
+<td title='fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage()'><b>navigateToLoginPage</b><br>Test class: fuelbuddyAutomationTest.LoginScreenTest</td>
+<td></td>
+<td>-1711992779</td>
+<td>fuelbuddyAutomationTest.LoginScreenTest@449a4f23</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage()'><b>navigateToLoginPage</b><br>Test class: fuelbuddyAutomationTest.LoginScreenTest</td>
+<td></td>
+<td>-1711992779</td>
+<td>fuelbuddyAutomationTest.LoginScreenTest@449a4f23</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.LoginScreenTest.tearDown()'><b>tearDown</b><br>Test class: fuelbuddyAutomationTest.LoginScreenTest</td>
+<td></td>
+<td>-1711992779</td>
+<td>fuelbuddyAutomationTest.LoginScreenTest@449a4f23</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage()'><b>navigateToLoginPage</b><br>Test class: fuelbuddyAutomationTest.LoginScreenTest</td>
+<td></td>
+<td>-1711992779</td>
+<td>fuelbuddyAutomationTest.LoginScreenTest@449a4f23</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage()'><b>navigateToLoginPage</b><br>Test class: fuelbuddyAutomationTest.LoginScreenTest</td>
+<td></td>
+<td>-1711992779</td>
+<td>fuelbuddyAutomationTest.LoginScreenTest@449a4f23</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage()'><b>navigateToLoginPage</b><br>Test class: fuelbuddyAutomationTest.LoginScreenTest</td>
+<td></td>
+<td>-1711992779</td>
+<td>fuelbuddyAutomationTest.LoginScreenTest@449a4f23</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage()'><b>navigateToLoginPage</b><br>Test class: fuelbuddyAutomationTest.LoginScreenTest</td>
+<td></td>
+<td>-1711992779</td>
+<td>fuelbuddyAutomationTest.LoginScreenTest@449a4f23</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -205,130 +183,447 @@ Driver info: driver.version: unknown
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testInvalidName()'><b>testInvalidName</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
-<td></td>
-<td>2</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5</td></tr>
-<tr>
-<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testPhoneNumberPrefixFieldDisaplys()'><b>testPhoneNumberPrefixFieldDisaplys</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
-<td></td>
-<td>0</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5</td></tr>
-<tr>
-<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testNameFieldDisplayed()'><b>testNameFieldDisplayed</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
-<td></td>
-<td>0</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5</td></tr>
-<tr>
-<td title='fuelbuddyAutomationTest.WelcomeScreenTest.testGetStartedButtonDisplay()'><b>testGetStartedButtonDisplay</b><br>Test class: fuelbuddyAutomationTest.WelcomeScreenTest</td>
-<td></td>
-<td>1</td>
-<td>fuelbuddyAutomationTest.WelcomeScreenTest@470734c3</td></tr>
-<tr>
-<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testUsernameFieldText()'><b>testUsernameFieldText</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
-<td></td>
-<td>0</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5</td></tr>
-<tr>
 <td title='fuelbuddyAutomationTest.WelcomeScreenTest.testFuelBuddyLogo()'><b>testFuelBuddyLogo</b><br>Test class: fuelbuddyAutomationTest.WelcomeScreenTest</td>
 <td></td>
 <td>1</td>
-<td>fuelbuddyAutomationTest.WelcomeScreenTest@470734c3</td></tr>
+<td>fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2</td></tr>
 <tr>
 <td title='fuelbuddyAutomationTest.WelcomeScreenTest.testGetStartedText()'><b>testGetStartedText</b><br>Test class: fuelbuddyAutomationTest.WelcomeScreenTest</td>
 <td></td>
 <td>1</td>
-<td>fuelbuddyAutomationTest.WelcomeScreenTest@470734c3</td></tr>
+<td>fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2</td></tr>
 <tr>
-<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testRegisterButtonText()'><b>testRegisterButtonText</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
-<td></td>
-<td>0</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5</td></tr>
-<tr>
-<td title='fuelbuddyAutomationTest.WelcomeScreenTest.testWelcomeText()'><b>testWelcomeText</b><br>Test class: fuelbuddyAutomationTest.WelcomeScreenTest</td>
+<td title='fuelbuddyAutomationTest.WelcomeScreenTest.testGetStartedButtonDisplay()'><b>testGetStartedButtonDisplay</b><br>Test class: fuelbuddyAutomationTest.WelcomeScreenTest</td>
 <td></td>
 <td>1</td>
-<td>fuelbuddyAutomationTest.WelcomeScreenTest@470734c3</td></tr>
-<tr>
-<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testBlankName()'><b>testBlankName</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
-<td></td>
-<td>2</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5</td></tr>
-<tr>
-<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testNameFieldText()'><b>testNameFieldText</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
-<td></td>
-<td>0</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5</td></tr>
-<tr>
-<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testInvalidPhoneNumber()'><b>testInvalidPhoneNumber</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
-<td></td>
-<td>2</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5</td></tr>
-<tr>
-<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testPhoneNumberPrefixFieldText()'><b>testPhoneNumberPrefixFieldText</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
-<td></td>
-<td>0</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5</td></tr>
-<tr>
-<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testBlankPhoneNumber()'><b>testBlankPhoneNumber</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
-<td></td>
-<td>2</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5</td></tr>
-<tr>
-<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testBlankUsername()'><b>testBlankUsername</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
-<td></td>
-<td>2</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5</td></tr>
-<tr>
-<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testLoginToggleButtonDisplayed()'><b>testLoginToggleButtonDisplayed</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
-<td></td>
-<td>0</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5</td></tr>
-<tr>
-<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testInvalidUnsername()'><b>testInvalidUnsername</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
-<td></td>
-<td>2</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5</td></tr>
-<tr>
-<td title='fuelbuddyAutomationTest.WelcomeScreenTest.testWelcomeSloganText()'><b>testWelcomeSloganText</b><br>Test class: fuelbuddyAutomationTest.WelcomeScreenTest</td>
-<td></td>
-<td>1</td>
-<td>fuelbuddyAutomationTest.WelcomeScreenTest@470734c3</td></tr>
-<tr>
-<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testFuelBuddyLogo()'><b>testFuelBuddyLogo</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
-<td></td>
-<td>0</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5</td></tr>
-<tr>
-<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testPhoneNumberFieldDisplayed()'><b>testPhoneNumberFieldDisplayed</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
-<td></td>
-<td>0</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5</td></tr>
+<td>fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2</td></tr>
 <tr>
 <td title='fuelbuddyAutomationTest.WelcomeScreenTest.testClickGetStartedButton()'><b>testClickGetStartedButton</b><br>Test class: fuelbuddyAutomationTest.WelcomeScreenTest</td>
 <td></td>
 <td>2</td>
-<td>fuelbuddyAutomationTest.WelcomeScreenTest@470734c3</td></tr>
+<td>fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.WelcomeScreenTest.testWelcomeText()'><b>testWelcomeText</b><br>Test class: fuelbuddyAutomationTest.WelcomeScreenTest</td>
+<td></td>
+<td>1</td>
+<td>fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2</td></tr>
 <tr>
 <td title='fuelbuddyAutomationTest.WelcomeScreenTest.testFuelStationImage()'><b>testFuelStationImage</b><br>Test class: fuelbuddyAutomationTest.WelcomeScreenTest</td>
 <td></td>
 <td>1</td>
-<td>fuelbuddyAutomationTest.WelcomeScreenTest@470734c3</td></tr>
+<td>fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2</td></tr>
 <tr>
-<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testPhoneNumberFieldText()'><b>testPhoneNumberFieldText</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
+<td title='fuelbuddyAutomationTest.WelcomeScreenTest.testWelcomeSloganText()'><b>testWelcomeSloganText</b><br>Test class: fuelbuddyAutomationTest.WelcomeScreenTest</td>
 <td></td>
-<td>0</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5</td></tr>
+<td>1</td>
+<td>fuelbuddyAutomationTest.WelcomeScreenTest@76a4ebf2</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testUsernameFieldDisplayed()'><b>testUsernameFieldDisplayed</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
-<td></td>
+<td title='fuelbuddyAutomationTest.LoginScreenTest.testInvalidPhoneNumber()'><b>testInvalidPhoneNumber</b><br>Test class: fuelbuddyAutomationTest.LoginScreenTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+	at fuelbuddyAutomation.LoginScreen.&lt;init&gt;(LoginScreen.java:21)
+	at fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage(LoginScreenTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1964926542", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1964926542'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:799)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+	at fuelbuddyAutomation.LoginScreen.&lt;init&gt;(LoginScreen.java:21)
+	at fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage(LoginScreenTest.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
 <td>0</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5</td></tr>
+<td>fuelbuddyAutomationTest.LoginScreenTest@449a4f23</td></tr>
 <tr>
-<td title='fuelbuddyAutomationTest.RegistrationScreenTest.testRegisterButtonDisplayed()'><b>testRegisterButtonDisplayed</b><br>Test class: fuelbuddyAutomationTest.RegistrationScreenTest</td>
-<td></td>
+<td title='fuelbuddyAutomationTest.LoginScreenTest.testValidPhoneNumber()'><b>testValidPhoneNumber</b><br>Test class: fuelbuddyAutomationTest.LoginScreenTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+	at fuelbuddyAutomation.LoginScreen.&lt;init&gt;(LoginScreen.java:21)
+	at fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage(LoginScreenTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace405488475", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace405488475'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:799)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+	at fuelbuddyAutomation.LoginScreen.&lt;init&gt;(LoginScreen.java:21)
+	at fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage(LoginScreenTest.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
 <td>0</td>
-<td>fuelbuddyAutomationTest.RegistrationScreenTest@69e153c5</td></tr>
+<td>fuelbuddyAutomationTest.LoginScreenTest@449a4f23</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.LoginScreenTest.testFuelBuddyLogo()'><b>testFuelBuddyLogo</b><br>Test class: fuelbuddyAutomationTest.LoginScreenTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+	at fuelbuddyAutomation.LoginScreen.&lt;init&gt;(LoginScreen.java:21)
+	at fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage(LoginScreenTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1088744071", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1088744071'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:799)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+	at fuelbuddyAutomation.LoginScreen.&lt;init&gt;(LoginScreen.java:21)
+	at fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage(LoginScreenTest.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>fuelbuddyAutomationTest.LoginScreenTest@449a4f23</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.LoginScreenTest.testCountryCodeTextField()'><b>testCountryCodeTextField</b><br>Test class: fuelbuddyAutomationTest.LoginScreenTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+	at fuelbuddyAutomation.LoginScreen.&lt;init&gt;(LoginScreen.java:21)
+	at fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage(LoginScreenTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1205419533", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1205419533'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:799)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+	at fuelbuddyAutomation.LoginScreen.&lt;init&gt;(LoginScreen.java:21)
+	at fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage(LoginScreenTest.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>fuelbuddyAutomationTest.LoginScreenTest@449a4f23</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.LoginScreenTest.testPhoneNumberTextField()'><b>testPhoneNumberTextField</b><br>Test class: fuelbuddyAutomationTest.LoginScreenTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+	at fuelbuddyAutomation.LoginScreen.&lt;init&gt;(LoginScreen.java:21)
+	at fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage(LoginScreenTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace981159997", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace981159997'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:799)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+	at fuelbuddyAutomation.LoginScreen.&lt;init&gt;(LoginScreen.java:21)
+	at fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage(LoginScreenTest.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>fuelbuddyAutomationTest.LoginScreenTest@449a4f23</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.LoginScreenTest.testPhoneNumberField()'><b>testPhoneNumberField</b><br>Test class: fuelbuddyAutomationTest.LoginScreenTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+	at fuelbuddyAutomation.LoginScreen.&lt;init&gt;(LoginScreen.java:21)
+	at fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage(LoginScreenTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1657125852", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1657125852'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:799)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+	at fuelbuddyAutomation.LoginScreen.&lt;init&gt;(LoginScreen.java:21)
+	at fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage(LoginScreenTest.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>fuelbuddyAutomationTest.LoginScreenTest@449a4f23</td></tr>
+<tr>
+<td title='fuelbuddyAutomationTest.LoginScreenTest.testCountryCodeField()'><b>testCountryCodeField</b><br>Test class: fuelbuddyAutomationTest.LoginScreenTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+	at fuelbuddyAutomation.LoginScreen.&lt;init&gt;(LoginScreen.java:21)
+	at fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage(LoginScreenTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace465909321", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace465909321'><pre>java.lang.IllegalArgumentException: Can not set io.appium.java_client.MobileElement field fuelbuddyAutomation.LoginScreen.getStartedButton to jdk.proxy2.$Proxy13
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at java.base/jdk.internal.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.base/java.lang.reflect.Field.set(Field.java:799)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+	at fuelbuddyAutomation.LoginScreen.&lt;init&gt;(LoginScreen.java:21)
+	at fuelbuddyAutomationTest.LoginScreenTest.navigateToLoginPage(LoginScreenTest.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>fuelbuddyAutomationTest.LoginScreenTest@449a4f23</td></tr>
 </table><p>
 </body>
 </html>

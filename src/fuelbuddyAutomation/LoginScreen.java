@@ -42,10 +42,64 @@ public class LoginScreen {
 	        }
 	    }
 	 
-		public void isFuelbudyyLogoDisplayed() {
+		public boolean isFuelbuddyLogoDisplayed() {
 			MobileElement fuelBuddyLogo = (MobileElement) driver.findElement(By.xpath(
 					"//android.widget.ImageView"));
-			fuelBuddyLogo.isDisplayed();
+			return fuelBuddyLogo.isDisplayed();
+		}
+		
+		public String isPhoneNumberTextFieldDisplayed() {
+			MobileElement phoneNumberTextField = (MobileElement) driver
+					.findElement(By.xpath("//android.widget.TextView[@text=\"Phone Number\"]"));
+			return phoneNumberTextField.getText();
+		}
+		
+		public boolean isPhoneNumberFieldDisplayed() {
+			MobileElement phoneNumberField = (MobileElement) driver
+					.findElement(By.xpath("//android.widget.EditText[@content-desc=\"Phone Input\"]"));
+			return phoneNumberField.isDisplayed();
+		}
+		
+		public boolean isCountryCodeFieldDisplayed() {
+			MobileElement countryCodeField = (MobileElement) driver
+					.findElement(By.xpath("//android.widget.EditText[@text=\"+353\"]"));
+			return countryCodeField.isDisplayed();
+		}
+		
+		public String isCorrectCountryCodeTextDisplayed() {
+			MobileElement countryCodeField = (MobileElement) driver
+					.findElement(By.xpath("//android.widget.EditText[@text=\"+353\"]"));
+			return countryCodeField.getText();
+		}
+		
+		public boolean isSendLoginCodeButtonDisplayed() {
+			MobileElement sendLoginCodeButton = (MobileElement) driver
+					.findElement(By.xpath("//android.widget.TextView[@text=\"Send Login Code\"]"));
+			return sendLoginCodeButton.isDisplayed();
+		}
+		
+		public void clickSendLoginCodeButton() {
+			MobileElement sendLoginCodeButton = (MobileElement) driver
+					.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Send Login Code\"]/android.view.ViewGroup"));
+			sendLoginCodeButton.click();
+		}
+		
+		public void invalidPhoneNumber(String phoneNumber) {
+			MobileElement phoneNumberField = (MobileElement) driver
+					.findElement(By.xpath("//android.widget.EditText[@content-desc=\"Phone Input\"]"));
+			phoneNumberField.sendKeys(phoneNumber);
+			MobileElement sendLoginCodeButton = (MobileElement) driver
+					.findElement(By.xpath("//android.widget.TextView[@text=\"Send Login Code\"]"));
+			sendLoginCodeButton.click();
+		}
+		
+		public void validPhoneNumber(String phoneNumber) {
+			MobileElement phoneNumberField = (MobileElement) driver
+					.findElement(By.xpath("//android.widget.EditText[@content-desc=\"Phone Input\"]"));
+			phoneNumberField.sendKeys(phoneNumber);
+			MobileElement sendLoginCodeButton = (MobileElement) driver
+					.findElement(By.xpath("//android.widget.TextView[@text=\"Send Login Code\"]"));
+			sendLoginCodeButton.click();
 		}
 
 }
