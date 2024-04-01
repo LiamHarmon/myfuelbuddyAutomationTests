@@ -21,10 +21,10 @@ public class LoginScreen {
 			PageFactory.initElements(driver, this);
 	 }
 	 
-	 @AndroidFindBy(accessibility = "Get Started")
+	 @AndroidFindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Get Started\"]/android.view.ViewGroup")
 	    	private MobileElement getStartedButton;
 
-	  @AndroidFindBy(accessibility = "Login")
+	  @AndroidFindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Login\"]/android.view.ViewGroup")
 	    	private MobileElement loginToggleButton;
 	    
 	    public void navigateToLoginPage() {
@@ -41,5 +41,11 @@ public class LoginScreen {
 	            return false;
 	        }
 	    }
+	 
+		public void isFuelbudyyLogoDisplayed() {
+			MobileElement fuelBuddyLogo = (MobileElement) driver.findElement(By.xpath(
+					"//android.widget.ImageView"));
+			fuelBuddyLogo.isDisplayed();
+		}
 
 }

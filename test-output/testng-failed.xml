@@ -13,8 +13,8 @@
     <classes>
       <class name="fuelbuddyAutomationTest.RegistrationScreenTest">
         <methods>
+          <include name="testAllValidCredentials"/>
           <include name="navigateToRegistrationPage"/>
-          <include name="testNameFieldText"/>
           <include name="testLoginToggleButtonClick"/>
           <include name="setUp"/>
         </methods>

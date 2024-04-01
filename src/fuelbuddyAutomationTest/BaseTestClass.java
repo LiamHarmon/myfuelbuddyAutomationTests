@@ -23,9 +23,9 @@ public class BaseTestClass {
         dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
         dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11.0");
         
-        dc.setCapability(MobileCapabilityType.APP, "C:\\Users\\liamh\\Desktop\\fuelbuddy App\\fuelbuddy_v1.0.2.apk");
+        dc.setCapability(MobileCapabilityType.APP, "C:\\Users\\liamh\\Desktop\\fuelbuddy App\\fuelbuddy_v1.0.3.apk");
 		
-		URL url = new URL(" http://192.168.1.12:4723");
+		URL url = new URL(" http://192.168.1.16:4723");
 		
 		driver = new AndroidDriver<WebElement>(url, dc);
 		Thread.sleep(5000);

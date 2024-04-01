@@ -12,7 +12,7 @@
 	</groups>
     <classes>
       <class name="fuelbuddyAutomationTest.BaseTestClass"/>
-      <!--<class name="fuelbuddyAutomationTest.WelcomeScreenTest"/>-->
+      <class name="fuelbuddyAutomationTest.WelcomeScreenTest"/>
       <class name="fuelbuddyAutomationTest.RegistrationScreenTest"/>
       <!--<class name="fuelbuddyAutomationTest.LoginScreenTest"/>-->
     </classes>

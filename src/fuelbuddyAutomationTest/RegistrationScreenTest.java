@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 import fuelbuddyAutomation.LoginScreen;
 import fuelbuddyAutomation.RegistrationScreen;
+import fuelbuddyAutomation.VerificationScreen;
 import fuelbuddyAutomation.WelcomeScreen;
 
 public class RegistrationScreenTest extends BaseTestClass {
@@ -40,7 +41,7 @@ public class RegistrationScreenTest extends BaseTestClass {
 		RegistrationScreen registrationScreen = new RegistrationScreen(driver);
 		registrationScreen.clickLoginToggleButton();
 		WebDriverWait wait = new WebDriverWait(driver, 10);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.widget.TextView[@text=\"Send Login Code\"]")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.widget.TextView[@text=\"Send Login Code\"]]")));
         LoginScreen nextScreen = new LoginScreen(driver);
         Assert.assertTrue(nextScreen.isElementPresent(), "The Login Screen was not displayed.");
 	}
@@ -121,9 +122,9 @@ public class RegistrationScreenTest extends BaseTestClass {
 	}
 	
 	@Test(groups = {"regression", "smoke"}, priority = 14)
-	public void testInvalidNameAndValidUsernameAndPhone() {
+	public void testInvalidName() {
 		RegistrationScreen registrationScreen = new RegistrationScreen(driver);
-		registrationScreen.enterInvalidNameAndValidUsernameAndPhone("A", "tttttAutoTest", "1234567890");
+		registrationScreen.invalidName("A", "tttttAutoTest", "0858594108");
 		registrationScreen.clickRegisterButton();
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions
@@ -132,9 +133,9 @@ public class RegistrationScreenTest extends BaseTestClass {
 	}
 	
 	@Test(groups = {"regression", "smoke"}, priority = 15)
-	public void testBlankNameAndValidUsernameAndPhone() {
+	public void testBlankName() {
 		RegistrationScreen registrationScreen = new RegistrationScreen(driver);
-		registrationScreen.enterBlankNameAndValidUsernameAndPhone("tttttAutoTest", "1234567890");
+		registrationScreen.blankName("tttttAutoTest", "0858594108");
 		registrationScreen.clickRegisterButton();
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions
@@ -143,9 +144,9 @@ public class RegistrationScreenTest extends BaseTestClass {
 	}
 	
 	@Test(groups = {"regression", "smoke"}, priority = 16)
-	public void testValidNameAndInvalidUsernameAndPhone() {
+	public void testInvalidUnsername() {
 		RegistrationScreen registrationScreen = new RegistrationScreen(driver);
-		registrationScreen.enterValidNameAndInvalidUsernameAndValidPhone("AutoTest", "t", "1234567890");
+		registrationScreen.invalidUsername("AutoTest", "t", "0858594108");
 		registrationScreen.clickRegisterButton();
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(
@@ -153,6 +154,51 @@ public class RegistrationScreenTest extends BaseTestClass {
 		Assert.assertTrue(registrationScreen.isElementPresent(), "The Invalid Username message was not displayed.");
 	}
 	
+	@Test(groups = {"regression", "smoke"}, priority = 17)
+	public void testBlankUsername() {
+		RegistrationScreen registrationScreen = new RegistrationScreen(driver);
+		registrationScreen.blankUsername("AutoTest", "0858594108");
+		registrationScreen.clickRegisterButton();
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(
+				By.xpath("//android.widget.TextView[@text=\"Username must be between 6-20 characters inclusive\"]")));
+		Assert.assertTrue(registrationScreen.isElementPresent(), "The Username is required message was not displayed.");
+	}
+	
+	@Test(groups = {"regression", "smoke"}, priority = 18)
+	public void testInvalidPhoneNumber() {
+		RegistrationScreen registrationScreen = new RegistrationScreen(driver);
+		registrationScreen.invalidPhoneNumber("AutoTest", "tttttAutoTest", "1234567890");
+		registrationScreen.clickRegisterButton();
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(
+				By.xpath("//android.widget.TextView[@text=\"Please enter a valid phone number (e.g. 8XXXXXXXX or 08XXXXXXXX)\"]")));
+		Assert.assertTrue(registrationScreen.isElementPresent(), "The Invalid Phone Number message was not displayed.");
+	}
+	
+	@Test(groups = {"regression", "smoke"}, priority = 19)
+	public void testBlankPhoneNumber() {
+		RegistrationScreen registrationScreen = new RegistrationScreen(driver);
+		registrationScreen.blankPhoneNumber("AutoTest", "tttttAutoTest");
+		registrationScreen.clickRegisterButton();
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
+				"//android.widget.TextView[@text=\"Please enter a valid phone number (e.g. 8XXXXXXXX or 08XXXXXXXX)\"]")));
+		Assert.assertTrue(registrationScreen.isElementPresent(),
+				"The Phone Number is required message was not displayed.");
+	}
+	
+	@Test(groups = {"regression", "smoke"}, priority = 20)
+	public void testAllValidCredentials() {
+		RegistrationScreen registrationScreen = new RegistrationScreen(driver);
+		registrationScreen.allValidCredentials("AutoTest", "tttttAutoTest", "0858594108");
+		registrationScreen.clickRegisterButton();
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions
+				.visibilityOfElementLocated(By.xpath("//android.widget.TextView[@text=\"Verification Code\"]")));
+		VerificationScreen nextScreen = new VerificationScreen(driver);
+		Assert.assertTrue(nextScreen.isElementPresent(), "The Verification Screen was not displayed.");
+	}
 	
 	 @AfterClass
 	    public void tearDown() {
