@@ -16,7 +16,7 @@ public class LoginScreenTest extends BaseTestClass {
     public void loginPageNavigation() {
         driver.resetApp();
         LoginScreen loginScreen = new LoginScreen(driver);
-        loginScreen.navigateToLoginPage();
+        loginScreen.navigateToLogin();
     }
     
     @Test(groups = {"regression"}, priority = 1)
@@ -56,7 +56,7 @@ public class LoginScreenTest extends BaseTestClass {
 		Assert.assertEquals(actualText, expectedText, "The country code text field does not match the expected value.");
 	}
 	
-	@Test(groups = {"regression", "smoke"}, priority = 18)
+	@Test(groups = {"regression", "smoke"}, priority = 6)
 	public void testInvalidPhoneNumber() {
 		LoginScreen  loginScreen = new LoginScreen(driver);
 		loginScreen.invalidPhoneNumber("1234567890");
@@ -67,7 +67,7 @@ public class LoginScreenTest extends BaseTestClass {
 		Assert.assertTrue(loginScreen.isElementPresent(), "The Invalid Phone Number message was not displayed.");
 	}
 	
-	@Test(groups = {"regression", "smoke"}, priority = 19)
+	@Test(groups = {"regression", "smoke"}, priority = 7)
 	public void testValidPhoneNumber() {
 		LoginScreen loginScreen = new LoginScreen(driver);
 		loginScreen.validPhoneNumber("876543210");

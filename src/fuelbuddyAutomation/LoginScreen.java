@@ -20,16 +20,26 @@ public class LoginScreen {
 			this.driver = driver2;
 			PageFactory.initElements(driver, this);
 	 }
-	 
-	 @AndroidFindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Get Started\"]/android.view.ViewGroup")
-	    	private MobileElement getStartedButton;
+	
+	 public void navigateToLogin() {
+	        WebDriverWait wait = new WebDriverWait(driver, 10);
 
-	  @AndroidFindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Login\"]/android.view.ViewGroup")
-	    	private MobileElement loginToggleButton;
-	    
-	    public void navigateToLoginPage() {
+	        // Click the "Get Started" button
+	        MobileElement getStartedButton = (MobileElement) wait.until(
+	            ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.TextView[@text='Get Started']"))
+	        );
 	        getStartedButton.click();
+
+	        // Wait for the "Login" toggle button to be clickable
+	        MobileElement loginToggleButton = (MobileElement) wait.until(
+	            ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.TextView[@text=\"Login\"]"))
+	        );
 	        loginToggleButton.click();
+
+	        // Ensure navigation to login by waiting for an element on the login screen
+	        wait.until(
+	            ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.widget.TextView[@text=\"Send Login Code\"]"))
+	        );
 	    }
 
 	 public boolean isElementPresent() {

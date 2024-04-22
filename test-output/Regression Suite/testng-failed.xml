@@ -13,15 +13,9 @@
     <classes>
       <class name="fuelbuddyAutomationTest.LoginScreenTest">
         <methods>
-          <include name="testPhoneNumberTextField"/>
-          <include name="testInvalidPhoneNumber"/>
-          <include name="testCountryCodeField"/>
-          <include name="testCountryCodeTextField"/>
           <include name="testValidPhoneNumber"/>
-          <include name="testFuelBuddyLogo"/>
-          <include name="testPhoneNumberField"/>
+          <include name="loginPageNavigation"/>
           <include name="tearDown"/>
-          <include name="navigateToLoginPage"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- fuelbuddyAutomationTest.LoginScreenTest -->
